@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import TabScreen from './TabScreen';
 import LoadingScreen from '../../screens/LoadingScreen/LoadingScreen';
 import LanguageScreen from '../../screens/LanguageScreen/LanguageScreen';
 import ForgotPassword from '../../screens/ForgotPassword/ForgotPassword';
@@ -28,12 +27,18 @@ import HTMLPlayerOffline from '../../screens/PlayerScreen/HTMLPlayer/HTMLPlayerO
 import YoutubePlayer from '../../screens/PlayerScreen/YoutubePlayer/YoutubePlayer';
 import StandAlonePlayer from '../../screens/PlayerScreen/StandAlonePlayer/StandAlonePlayer';
 import EnableLocationScreen from '../../screens/Location/EnableLocationScreen';
-import DashboardStack from './DashboardStack';
-import SCPUserTabScreen from '../SCPUser/SCPUserTabScreen';
-import YouthNetTabScreen from '../Youthnet/YouthNetTabScreen';
 import UnauthorizedScreen from '../../screens/Unauthorized/UnauthorizedScreen';
 import PlpWebViewScreen from '../../screens/PlpWebViewScreen/PlpWebViewScreen';
 import ProgramsScreen from '../../screens/ProgramsScreen/ProgramsScreen';
+
+const TabScreen = lazy(() => import('./TabScreen'));
+const DashboardStack = lazy(() => import('./DashboardStack'));
+const SCPUserTabScreen = lazy(() => import('../SCPUser/SCPUserTabScreen'));
+const YouthNetTabScreen = lazy(() => import('../Youthnet/YouthNetTabScreen'));
+
+const stackLazyFallback = (
+  <View style={{ flex: 1, backgroundColor: 'white' }} />
+);
 
 const StackScreen = () => {
   const Stack = createNativeStackNavigator();
@@ -87,21 +92,34 @@ const StackScreen = () => {
 
       <Stack.Screen
         name="Dashboard"
-        component={TabScreen} // Changed to TabScreen for now to show content in dashboard
-        //component={AssessmentStack} // Changed to AssessmentStack for now to show only Assessment
         options={{ headerShown: false, lazy: true }}
-      />
+      >
+        {(props) => (
+          <Suspense fallback={stackLazyFallback}>
+            <TabScreen {...props} />
+          </Suspense>
+        )}
+      </Stack.Screen>
       <Stack.Screen
         name="SCPUserTabScreen"
-        component={SCPUserTabScreen} // Changed to TabScreen for now to show content in dashboard
-        //component={AssessmentStack} // Changed to AssessmentStack for now to show only Assessment
         options={{ headerShown: false, lazy: true }}
-      />
+      >
+        {(props) => (
+          <Suspense fallback={stackLazyFallback}>
+            <SCPUserTabScreen {...props} />
+          </Suspense>
+        )}
+      </Stack.Screen>
       <Stack.Screen
         name="YouthNetTabScreen"
-        component={YouthNetTabScreen}
         options={{ headerShown: false, lazy: true }}
-      />
+      >
+        {(props) => (
+          <Suspense fallback={stackLazyFallback}>
+            <YouthNetTabScreen {...props} />
+          </Suspense>
+        )}
+      </Stack.Screen>
 
       <Stack.Screen
         name="PlayerScreen"
@@ -253,9 +271,14 @@ const StackScreen = () => {
 
       <Stack.Screen
         name="DashboardStack"
-        component={DashboardStack} // Changed to Assessment for now
         options={{ headerShown: false, lazy: true }}
-      />
+      >
+        {(props) => (
+          <Suspense fallback={stackLazyFallback}>
+            <DashboardStack {...props} />
+          </Suspense>
+        )}
+      </Stack.Screen>
 
       <Stack.Screen
         name="EnableLocationScreen"

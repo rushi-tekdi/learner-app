@@ -1,0 +1,514 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+03-23 17:48:39.015  1996  2970 I OplusPreStartController: preStartActivity Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.pratham.learning/.MainActivity }
+03-23 17:48:39.016  1996  2970 I OplusPreStartController: isCapBitmapExists intent: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.pratham.learning/.MainActivity }, requestRotation: SCREEN_ORIENTATION_UNSPECIFIED, surfaceRotation: ROTATION_0, targetRotation: ROTATION_0, uiMode: 33, found captures: false
+03-23 17:48:39.042  1996  2970 E OplusAppQuickStart_AppQuickStartController: notifyStartActivity intent:Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 xflg=0x4 cmp=com.pratham.learning/.MainActivity bnds=[48,226][280,526] (has extras) }
+03-23 17:48:39.046  1996  2970 D WindowManager: NFW_setClientVisible:ActivityRecord{240552689 u0 com.pratham.learning/.MainActivity clientVisible:true
+03-23 17:48:39.047  1996  2970 D FlexibleTaskController: isSupportFlexibleWindow target = com.pratham.learning/.MainActivity callPkg = FlexibleTaskController support = true ,caller = 1996
+03-23 17:48:39.050  1996  2970 D FlexibleTaskController: isSupportFlexibleWindow target = com.pratham.learning/.MainActivity callPkg = FlexibleTaskController support = true ,caller = 1996
+03-23 17:48:39.050  1996  2970 D FlexibleWindowManagerService: no reused task found for ActivityRecord{240552689 u0 com.pratham.learning/.MainActivity t-1}
+03-23 17:48:39.056  1996  2970 D ActivityTaskManager: validateStartingWindowTheme:  Pkg=com.pratham.learning, Translucent=false, Floating=false, ShowWallpaper=false, Disable=false, LaunchSource=2, Prev=null, LaunchedFromPackage=com.android.launcher
+03-23 17:48:39.056  1996  2970 D ActivityTaskManager: addStartingWindow for ActivityRecord{240552689 u0 com.pratham.learning/.MainActivity t8043}, mainWin=null, state=INITIALIZING, isKeyguardLocked=false, isKeyguardGoingAway=false
+03-23 17:48:39.060  1996  2970 D ActivityTaskManager: setAppVisibility(Token{3143af6 ActivityRecord{240552689 u0 com.pratham.learning/.MainActivity t8043}}, visible=true):  visible=false mVisibleRequested=false
+03-23 17:48:39.060  1996  2970 D ActivityTaskManager: setVisibility(Token{3143af6 ActivityRecord{240552689 u0 com.pratham.learning/.MainActivity t8043}}, visible=true) defer commitVisibility for transition collecting
+03-23 17:48:39.064  1996  2970 D TaskOrganizerController: TaskOrganizerController.addStartingWindow: call wmshell to addStartingWindow:ActivityRecord{240552689 u0 com.pratham.learning/.MainActivity t8043}
+03-23 17:48:39.065  1996  2970 I PowerHalWrapper: amsBoostNotify pid:2743,activity:com.android.launcher.Launcher, package:com.android.launcher, mProcessCreatePackcom.pratham.learning 
+03-23 17:48:39.069  2743  2743 I [UAH_CLIENT]: UahEventAcquire, cmdid:85, pkg:com.pratham.learning, identity:GpuBoost
+03-23 17:48:39.069  1996  2970 I OplusHansManager : front pkg: com.pratham.learning, uid: 10448, prev pkg: com.android.launcher, prev uid: 10235
+03-23 17:48:39.070  1996  2382 I [UAH_CLIENT]: UahEventAcquire, cmdid:1, pkg:com.pratham.learning, identity:com.android.server.wm
+03-23 17:48:39.071  1996  2970 D ActivityTaskManager: notifyTaskRemoved, task: Task{17dfbe1 #8038 type=standard I=com.pratham.learning/.MainActivity} trace:com.android.server.wm.RecentTasks.removeForAddTask:1888 com.android.server.wm.RecentTasks.add:1377 com.android.server.wm.ActivityStarter.startActivityInner:3011 com.android.server.wm.ActivityStarter.startActivityUnchecked:2156 com.android.server.wm.ActivityStarter.executeRequest:1906 
+03-23 17:48:39.072  2529  2669 D WindowManager: Add to mViews: android.widget.FrameLayout{56ebf0c V.E...... ......I. 0,0-0,0 alpha=1.0 viewInfo = },pkg= com.pratham.learning
+03-23 17:48:39.074  1996  2970 D ActivityTaskManager: notifyTaskAdded, task: Task{558bb91 #8043 type=standard I=com.pratham.learning/.MainActivity} trace:com.android.server.wm.RecentTasks.add:1392 com.android.server.wm.ActivityStarter.startActivityInner:3011 com.android.server.wm.ActivityStarter.startActivityUnchecked:2156 com.android.server.wm.ActivityStarter.executeRequest:1906 com.android.server.wm.ActivityStarter.execute:1004 
+03-23 17:48:39.074  1996  2996 D NativeFreezeManager: freezeForAppSwitchScene mAppLaunchFzDxEnable enter, mFgAppPkgname com.pratham.learning
+03-23 17:48:39.077  1996  2598 I Osense-BaseDecisionMaker: notifySceneToAthenaPolicy: SCENE_APP_SWITCH, bundle: Bundle[{prevPkgName=com.android.launcher, curUid=10448, isGame=false, curPkgName=com.pratham.learning, prevUid=10235}]
+03-23 17:48:39.077  1996  2970 D FlexibleWindowManagerService: should not dispatch appeared task Task{558bb91 #8043 type=standard I=com.pratham.learning/.MainActivity}
+03-23 17:48:39.077  1996  3011 I OPM-Process: resume pkg: com.pratham.learning, uid:10448, prev pkg: com.android.launcher, prev uid: 10235
+03-23 17:48:39.077  1996  2970 D ActivityTaskManager: commitVisibility: ActivityRecord{240552689 u0 com.pratham.learning/.MainActivity t8043}: visible=true visibleRequested=true, isInTransition=true 
+03-23 17:48:39.077  1996  2970 D Transition: collectOrderChanges onTopTasksEnd: [Task{558bb91 #8043 type=standard I=com.pratham.learning/.MainActivity}], reportedOnTop:null, mOnTopTasksStart: [Task{558bb91 #8043 type=standard I=com.pratham.learning/.MainActivity}], TDA child: [Task{172a92f #2 type=undefined}, Task{bb95509 #7967 type=standard A=10285:com.google.android.dialer}, Task{e42d19e #7970 type=standard A=10339:com.openai.chatgpt}, Task{2d910e8 #7972 type=standard A=10194:com.coloros.filemanager}, Task{ad4958e #7978 type=standard A=1000:com.android.settings.root}, Task{371b715 #8024 type=standard A=10379:com.whatsapp}, Task{8077039 #8016 type=standard A=10353:com.Slack}, Task{a898222 #1 type=home}, Task{558bb91 #8043 type=standard I=com.pratham.learning/.MainActivity}]
+03-23 17:48:39.078  1996  2970 D OplusFlexibleActivityTransitionManager: fixTransitType type result:1, targets: [ChangeInfo{e3e0fd0 container=Task{558bb91 #8043 type=standard I=com.pratham.learning/.MainActivity} flags=0x10}, ChangeInfo{c986b7e container=Task{a898222 #1 type=home} flags=0x10}]
+03-23 17:48:39.079  1996 13688 I PowerHalWrapper: amsBoostProcessCreate package:com.pratham.learning 
+03-23 17:48:39.079  1996  2970 D OplusTransitionController: onTransactionReady, transition: 3893, info: {id=3893 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{13c58fc Task{558bb91 #8043 type=standard I=com.pratham.learning/.MainActivity}}} m=OPEN f=NONE leash=Surface(name=Task=8043)/@0x9c11082 sb=Rect(0, 0 - 1080, 2392) eb=Rect(0, 0 - 1080, 2392) epz=Point(1080, 2392) d=0 taskParent=-1},{WCT{RemoteToken{3f59bbe Task{a898222 #1 type=home}}} m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1)/@0xac79ec3 sb=Rect(0, 0 - 1080, 2392) eb=Rect(0, 0 - 1080, 2392) epz=Point(1080, 2392) d=0 taskParent=-1}] 
+03-23 17:48:39.079  1996  2970 D OplusTransitionController:    ChangeInfo{e3e0fd0 container=Task{558bb91 #8043 type=standard I=com.pratham.learning/.MainActivity} flags=0x10}
+03-23 17:48:39.079  1996  2970 D OplusTransitionController:    ChangeInfo{273b2ce container=ActivityRecord{240552689 u0 com.pratham.learning/.MainActivity t8043} flags=0x0}
+03-23 17:48:39.079  1996  2970 D OplusTransitionController: , mNeedCanvasExitAnim=false, mMergeSecondTaskAnimation=false, mIsLaunchUnityStart=false, mIsLaunchFromAssistantByDefault=false, mSkipRemoteTransitionfalse, mIsStartFromKeyguard=false flags=0x0, mWCT=null, mIsOpenMergeToInValidPredictive=false}]}, targets : [ChangeInfo{e3e0fd0 container=Task{558bb91 #8043 type=standard I=com.pratham.learning/.MainActivity} flags=0x10}, ChangeInfo{c986b7e container=Task{a898222 #1 type=home} flags=0x10}], participants: {Task{558bb91 #8043 type=standard I=com.pratham.learning/.MainActivity}, WallpaperWindowToken{ce7a49f showWhenLocked=true}, WallpaperWindowToken{d6a3130 showWhenLocked=false}, ActivityRecord{228529049 u0 com.android.launcher/.Launcher t5}, ActivityRecord{240552689 u0 com.pratham.learning/.MainActivity t8043}}
+03-23 17:48:39.082  2529  2617 V WindowManagerShell: Transition requested (#3893): android.os.BinderProxy@e1c430e TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=8043 effectiveUid=10448 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.pratham.learning/.MainActivity mCallingUid=10235 } baseActivity=ComponentInfo{com.pratham.learning/com.pratham.learning.MainActivity} topActivity=ComponentInfo{com.pratham.learning/com.pratham.learning.MainActivity} origActivity=null realActivity=ComponentInfo{com.pratham.learning/com.pratham.learning.MainActivity}
+03-23 17:48:39.082  2529  2617 V WindowManagerShell:  topActivityInfo=ActivityInfo{8a6033c com.pratham.learning.MainActivity} launchCookies=[android.os.BinderProxy@849f509] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(269, 645 - 811, 1725) capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=-9 topActivityRequestOpenInBrowserEducationTimestamp=0
+03-23 17:48:39.081  1996  2970 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 xflg=0x4 cmp=com.pratham.learning/.MainActivity bnds=[48,226][280,526] (has extras) mCallingUid=10235} with LAUNCH_SINGLE_TASK from uid 10235 (sr=228529049) (BAL_ALLOW_VISIBLE_WINDOW (callingUid has visible window)) result code=0
+03-23 17:48:39.087  1996  2188 I AppSnapshotController: attachStartingWindow, win = Window{ace9773 u0 Splash Screen com.pratham.learning}, shouldAppSnapshot = false
+03-23 17:48:39.087  1996  2188 D ActivityTaskManager: attachStartingWindow: mStartingData=SplashScreenStartingData{67962a9 removeAfterTransaction= 0}, mAssociatedTask=null, mStartingWindow=Window{ace9773 u0 Splash Screen com.pratham.learning}
+03-23 17:48:39.088  1996  2188 I WindowManager: addWindow: New client android.os.BinderProxy@11af7e2 : window=Window{ace9773 u0 Splash Screen com.pratham.learning}
+03-23 17:48:39.089  3053  3691 I iopgp   : Iopgp: TRANSACTION_IOPGP_PRELOAD Sequence_id = 122 pkg_name = com.pratham.learning uid = 10448 size = 1 isProfile = 1
+03-23 17:48:39.091  2529  2669 D ViewRootImplExtImpl: wrapConfigInfoIntoFlags rotation=0, smallestScreenWidthDp=0, residentWS=false, scenario=0, bounds=Rect(0, 0 - 1080, 2392), relayoutAsync=false, flags=0, newFlags=1254096896, title=Splash Screen com.pratham.learning
+03-23 17:48:39.093  1996  2776 V WindowManager: Relayout Window{ace9773 u0 Splash Screen com.pratham.learning}: viewVisibility=0, oldvis=0, req=1080x2392 , apr = 8, vsysui=, x=0, y=0
+03-23 17:48:39.093  1996  2776 I WindowManager: Window{ace9773 u0 Splash Screen com.pratham.learning} state from NO_SURFACE to DRAW_PENDING; reason: resetDrawState
+03-23 17:48:39.093  1996  2020 V WindowManager: Sent Transition (#3893) createdAt=03-23 17:48:39.048 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=8043 effectiveUid=10448 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.pratham.learning/.MainActivity mCallingUid=10235 } baseActivity=ComponentInfo{com.pratham.learning/com.pratham.learning.MainActivity} topActivity=ComponentInfo{com.pratham.learning/com.pratham.learning.MainActivity} origActivity=null realActivity=ComponentInfo{com.pratham.learning/com.pratham.learning.MainActivity}
+03-23 17:48:39.093  1996  2020 V WindowManager:  numActivities=1 lastActiveTime=337254442 supportsSplitScreenMultiWindow=true supportsMultiWindow=true supportsPocketStudioMultiWindow=true isInFlexibleEmbedded = false uid = 10448 pid = 0 resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{13c58fc Task{558bb91 #8043 type=standard I=com.pratham.learning/.MainActivity}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 110 - 0, 0)
+03-23 17:48:39.093  1996  2020 V WindowManager:  topActivityInfo=ActivityInfo{574b02e com.pratham.learning.MainActivity} launchCookies=[android.os.BinderProxy@1f137cf] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(269, 645 - 811, 1725) capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=-9 topActivityRequestOpenInBrowserEducationTimestamp=0
+03-23 17:48:39.093  1996  2020 V WindowManager:  mOplusExtraBundle = Bundle[{androidx.flexible.taskFrame=Rect(0, 0 - 0, 0), androidx.flexible.Alpha=1.0, androidx.activity.task.attach.blur=0, androidx.activity.LaunchInsensible=0, androidx.activity.LaunchCornerRadius=0, key_flexible_task_state=0, topActivitySupportAppInnerSplit=false, key_flexible_task_animating_type=-1, key_flexible_task_root_activity_processname=com.pratham.learning, androidx.activity.LaunchScenario=0, is_oplus_clone_task=false, flexible_super_mini_state=false, topRunningActivityHash=240552689, androidx.activity.LaunchScale=1.0, androidx.activity.LaunchShadowRadius=0, is_transient_hide_for_task_info=false, key_flexible_task_root_activity_pid=0, key_flexible_task_root_activity_uid=10448}]}, pipChange = null, remoteTransition = RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@bd0055c, appThread = android.app.IApplicationThread$Stub$Proxy@a5c8065, debugName = QuickstepLaunch }, displayChange = null, flags = 0, debugId = 3893 }
+03-23 17:48:39.093  1996  2020 V WindowManager:         {WCT{RemoteToken{13c58fc Task{558bb91 #8043 type=standard I=com.pratham.learning/.MainActivity}}} m=OPEN f=NONE leash=Surface(name=Task=8043)/@0x9c11082 sb=Rect(0, 0 - 1080, 2392) eb=Rect(0, 0 - 1080, 2392) epz=Point(1080, 2392) d=0 taskParent=-1},
+03-23 17:48:39.093  1996  2020 V WindowManager:    ChangeInfo{e3e0fd0 container=Task{558bb91 #8043 type=standard I=com.pratham.learning/.MainActivity} flags=0x10}
+03-23 17:48:39.093  1996  2020 V WindowManager:    ChangeInfo{273b2ce container=ActivityRecord{240552689 u0 com.pratham.learning/.MainActivity t8043} flags=0x0}
+03-23 17:48:39.104  2529  2669 I SurfaceControl:  setExtendedRangeBrightness sc=Surface(name=Splash Screen com.pratham.learning)/@0xd5d3279,currentBufferRatio=1.0,desiredRatio=1.0
+03-23 17:48:39.107  1996  2040 I ActivityManager: Start proc 4364:com.pratham.learning/u0a448 for top-activity {com.pratham.learning/com.pratham.learning.MainActivity}
+03-23 17:48:39.108  1996  3964 I OStatsManager_OplusBatteryStatsManager: updateStateTime: PkgName = com.pratham.learning, uid = 10448, state to bg, mForegroundCnt = 0, isFg = false
+03-23 17:48:39.112  1996  2709 I WindowManager: Window{ace9773 u0 Splash Screen com.pratham.learning} state from DRAW_PENDING to COMMIT_DRAW_PENDING; reason: finishDrawingLocked
+03-23 17:48:39.115  1996  2024 I WindowManager: Window{ace9773 u0 Splash Screen com.pratham.learning} state from COMMIT_DRAW_PENDING to READY_TO_SHOW; reason: commitFinishDrawingLocked
+03-23 17:48:39.116  1996  2024 I WindowManager: Window{ace9773 u0 Splash Screen com.pratham.learning} state from READY_TO_SHOW to HAS_DRAWN; reason: performShowLocked
+03-23 17:48:39.120  1996  2024 I WindowStateExtImpl: onSurfaceShowChange show = true mPackageName = com.pratham.learning parentPkgName = com.pratham.learning
+03-23 17:48:39.126  1996  3129 I OplusHansManager : onUidActive() update stay time, uid=10448, pkgName=com.pratham.learning, U stay=4
+03-23 17:48:39.130  1996  2024 E OplusAppQuickStart_AppQuickStartController: scheduleHideStartingSurface addAfterPrepareSurface for:ActivityRecord{240552689 u0 com.pratham.learning/.MainActivity
+03-23 17:48:39.169  1996  2188 D SplitScreenAppReader: SPLIT_TOUCH support check:com.pratham.learning = false
+03-23 17:48:39.169  1996  2188 D ResourcesManagerCache: For package com.pratham.learning we got cacheList [null] appInfoExt is null ? false hasFeature ? false
+03-23 17:48:39.176  1996  2188 D ActivityTaskManager: onWindowFocusChanged Task{558bb91 #8043 type=standard I=com.pratham.learning/.MainActivity} would transfer to compact
+03-23 17:48:39.176  1996  2033 I UserAwareMgr: handleTopAppChanged: com.pratham.learning, pid: 4364, uid: 10448
+03-23 17:48:39.176  1996  2188 D ActivityTaskManager: NFW_setLastResumedActivityUncheckLocked:true r:ActivityRecord{240552689 u0 com.pratham.learning/.MainActivity t8043} currentFocus:null
+03-23 17:48:39.176  1996  2188 D FlexibleTaskController: onTaskFocusChanged prevTask:Task{617b728 #5 type=home I=com.android.launcher/.Launcher} ,currentTask:Task{558bb91 #8043 type=standard I=com.pratham.learning/.MainActivity}, reason: realStartActivityLocked - onActivityStateChanged
+03-23 17:48:39.176  1996  2188 D OplusFlexibleDCSManager: onNextPkgChanged pkg = com.pratham.learning
+03-23 17:48:39.177  1996  2188 I OplusAppSwitchManagerService: appswitch hasProcess ActivityRecord{240552689 u0 com.pratham.learning/.MainActivity t8043}
+03-23 17:48:39.177  1996  2382 I [UAH_CLIENT]: UahEventAcquire, cmdid:0, pkg:com.pratham.learning, identity:com.android.server.wm
+03-23 17:48:39.177  1996  2188 D OplusAppStartupConfigExt: ActivityChangedListener prePkg = com.android.launcher  nextPkg = com.pratham.learning
+03-23 17:48:39.177  1213  2195 D AudioFlingerExtImpl: AudioFlingerExtImpl oplusSetParameters: keyvalue onForegroundActivitiesChanged=com.pratham.learning:foreground:1|10448:4364
+03-23 17:48:39.177  1996  2188 I GameManagerServiceExt-GameManagerServiceExt: on FG change: com.android.launcher|com.pratham.learning
+03-23 17:48:39.177  1213  2195 D AudioFlingerExtImpl: updateForegroundInfo, mapInf mForegroundMap(1)|[com.pratham.learning]=1, uidPidMapInf mForegroundUidPidMap(1)|[10448]=4364
+03-23 17:48:39.177  1996  2188 I OplusAppSwitchManagerService: appswitch hasProcess ActivityRecord{240552689 u0 com.pratham.learning/.MainActivity t8043}
+03-23 17:48:39.177  1996  2188 I PowerHalWrapper: amsBoostNotify pid:4364,activity:com.pratham.learning.MainActivity, package:com.pratham.learning, mProcessCreatePackcom.pratham.learning 
+03-23 17:48:39.178  1996  2188 I mtkpower_client: [PowerHal_Wrap_notifyAppState] com.pratham.learning/com.pratham.learning.MainActivity pid=4364 activityId:240552689 state:1
+03-23 17:48:39.178  1163  1163 I vendor.mediatek.hardware.mtkpower_applist-service.mediatek: packName: com.pratham.learning actName: com.pratham.learning.MainActivity pid: 4364 uid: 10448 state: 1
+03-23 17:48:39.178  1163  1163 I MTK_APPList: [notifyAPPstate] com.pratham.learning/com.pratham.learning.MainActivity, pid=4364, uid=10448, state:RESUMED, fps:120, win:0
+03-23 17:48:39.178  1163  1163 I MTK_APPList: [notifyAPPstate] multi_resumed_app_info[0] com.pratham.learning/com.pratham.learning.MainActivity, pid:4364, fps:120, isMultiWindow:0
+03-23 17:48:39.178  1163  1163 I MTK_APPList: [notifyAPPstate] foreground:com.pratham.learning, pid:4364, uid:10448
+03-23 17:48:39.182  1996  2023 D OplusKeepAliveManager: TOP_APP is ProcessRecord{92f7c18 4364:com.pratham.learning/u0a448} uid is 10448
+03-23 17:48:39.182  1996  2071 D OplusAppSwitchListener: Detect com.pratham.learning switch to foreground
+03-23 17:48:39.183  1163  1163 I MTK_APPList: [notifyAPPstate] pc:1, com.android.launcher => com.pratham.learning
+03-23 17:48:39.187  3036  3103 W Battery : AppSwitchDetectorV2: OnAppSwitchObserver: onAppExit , info = OplusAppExitInfo = {  targetName = com.android.launcher hasResumingActivity = true resumingPackageName = com.pratham.learning resumingActivityName = com.pratham.learning.MainActivity resumingWindowMode = 1 isResumingMultiApp = false isResumingFirstStart = true extension = Bundle[mParcelledData.dataSize=588]} lastReg=1774242680338
+03-23 17:48:39.187  2463 16445 V DCSEX-AppSwitchManager: OnAppSwitchObserver: onAppExit, resuming = com.pratham.learning, target = com.android.launcher, is ResumingFirstStart =  true, is ResumingMultiApp =  false, extensionInfo =  Bundle[mParcelledData.dataSize=588]
+03-23 17:48:39.189  1996  2970 D ActivityTaskManager: after skip size:9,pre-Filtered:com.pratham.learning # com.pratham.learning # com.pratham.learning # com.Slack # com.whatsapp # com.android.settings # com.coloros.filemanager # com.openai.chatgpt # com.google.android.dialer # 
+03-23 17:48:39.189  3012  4237 I Athena  : AthenaDynamicReceiver: pre_app:com.android.launcher, next_app:com.pratham.learning(10448|4364)
+03-23 17:48:39.189  2463 17252 D DCSEX-AppLaunchEventRecorder: onAppSwitch from = com.android.launcher to = com.pratham.learning
+03-23 17:48:39.190  1996  3964 I OStatsManager_Calc: noteBeforePkgSwitch change = true, curTime = 337254540, com.pratham.learning, fg = false
+03-23 17:48:39.190  1996  3964 I OStatsManager_OplusBatteryStatsManager: updateStateTime: PkgName = com.pratham.learning, uid = 10448, state to fg, mForegroundCnt = 1, isFg = true
+03-23 17:48:39.190  1996  3964 I OStatsManager_OplusBatteryStatsManager: notePkgForeground [com.pratham.learning10448, com.android.launcher10235], uid = 10448, pid = 4364, pkgName = com.pratham.learning
+03-23 17:48:39.191  1996  3127 D OplusLatencyOptimizerManager: enter pkg: com.pratham.learning isPrevBlackAppTop: false mIsBlackAppTop: false
+03-23 17:48:39.191  1996  3127 D OplusEapManager: mTargetEnterName :com.pratham.learning
+03-23 17:48:39.192 10462 10474 D SceneSDK.1.0.4-SNAPSHOT.10462.DeepThinkerAppSwitchAbility: onAppSwitchEvent: AppSwitchEvent(timeStamp=1774268319187, eventType=2, targetName=com.android.launcher, firstStart=false, multiApp=false, windowMode=0, resumingPackageName=com.pratham.learning, resumingActivityName=com.pratham.learning.MainActivity, isResumingMultiApp=false, isResumingFirstStart=true)
+03-23 17:48:39.193 10462 10474 I AppRecommend_AppRecommendAdapter: receive app recommend from AppSwitchEvent(eventId=2, switchInfo=AppSwitchInfo(targetName=com.android.launcher, firstStart=false, multiApp=false, windowMode=0, resumingPackageName=com.pratham.learning, resumingActivityName=com.pratham.learning.MainActivity, isResumingFirstStart=true, isResumingMultiApp=false)) [Metis|com.oplus.metis|2.0.20-aa39d14]
+03-23 17:48:39.193 10462 10474 I AppRecommend_AppRecentAdapter: click enter:com.pratham.learning
+03-23 17:48:39.193  1996  2080 D VRR [OPlusRefreshRateService]: handleFrontAppChange pkgName: com.pratham.learning
+03-23 17:48:39.194  1110  1134 I statsd  : An anomaly (104240000001) (42)0x10000->10448[I] (42)0x20000->com.pratham.learning[S] (42)0x30000->.MainActivity[S]  has occurred! Informing subscribers.
+03-23 17:48:39.197  3869 10830 I midasd  : app forground called:com.pratham.learning
+03-23 17:48:39.198  2463 16445 V DCSEX-AppSwitchManager: OnAppSwitchObserver: onAppEnter, launchedFrom =  com.android.launcher, target =  com.pratham.learning, is firstStart =  true, is multiApp =  false, extensionInfo =  Bundle[mParcelledData.dataSize=996], launch_source_type =  launcherWorkspace, launch_source_traceid =  
+03-23 17:48:39.200  1996  2051 E OplusThermalStats: Error getting package info: com.pratham.learning
+03-23 17:48:39.200 10462 10491 D SceneSDK.1.0.4-SNAPSHOT.10462.DeepThinkerAppSwitchAbility: onAppSwitchEvent: AppSwitchEvent(timeStamp=1774268319187, eventType=2, targetName=com.android.launcher, firstStart=false, multiApp=false, windowMode=0, resumingPackageName=com.pratham.learning, resumingActivityName=com.pratham.learning.MainActivity, isResumingMultiApp=false, isResumingFirstStart=true)
+03-23 17:48:39.200 10462 10491 I metis_v2_AppSwitchDataCollector: AppExitEvent =  com.android.launcher, NextAppName = com.pratham.learning [Metis|com.oplus.metis|2.0.20-aa39d14]
+03-23 17:48:39.200  1110  1134 I statsd  : An anomaly (119840000001) (100198)0x10000->com.pratham.learning[S] (100198)0x20000->10448[I]  has occurred! Informing subscribers.
+03-23 17:48:39.201  3036  3103 W Battery : ThermalControlUtils: mForegroundPkg=com.pratham.learning mLastWindowMode=1
+03-23 17:48:39.201  3036  3103 W Battery : StateManager: getAppType com.pratham.learning, last=1774268256059
+03-23 17:48:39.201  3036  3103 W Battery : ThermalControllHandler: tempLevel=[4],userMode=2,gameUserMode=7,appType=-1,envTempType=0,appStates=[],appSwitchSafetyMode=false,split=[],float=[],full=[com.pratham.learning], tempGear=[4],configItemName=common_config
+03-23 17:48:39.202  1996  2970 D OplusBatteryServiceFeature: setSmartCoolDown: coolDown = 8, normalCoolDown = 8, pkgName = com.pratham.learning
+03-23 17:48:39.203 10462 10474 D AppRecommend_AppRecommendAlgorithm: recent app list in 30 minute is [AppShow{dateTime=2026-03-23T17:48:39.193, pkg='com.pratham.learning', directClick=true}, AppShow{dateTime=2026-03-23T17:39:20.084, pkg='com.phonepe.app', directClick=true}, AppShow{dateTime=2026-03-23T17:03:22.374, pkg='com.google.android.gm', directClick=true}, AppShow{dateTime=2026-03-23T16:58:53.076, pkg='com.coloros.phonemanager', directClick=true}, AppShow{dateTime=2026-03-23T16:12:46.453, pkg='com.Slack', directClick=true}, AppShow{dateTime=2026-03-23T16:12:35.716, pkg='com.whatsapp', directClick=true}, AppShow{dateTime=2026-03-23T16:09:28.164, pkg='com.android.settings', directClick=true}, AppShow{dateTime=2026-03-23T13:58:42.014, pkg='com.google.android.dialer', directClick=true}, AppShow{dateTime=2026-03-23T13:40:07.321, pkg='com.chess', directClick=true}, AppShow{dateTime=2026-03-23T13:31:27.085, pkg='com.coloros.calculator', directClick=true}, AppShow{dateTime=2026-03-23T13:20:34.487, pkg='com.netflix.mediaclient', directClick=true}, AppShow{dateTime=2026-03-23T10:41:22.998, pkg='com.coloros.alarmclock', directClick=true}, AppShow{dateTime=2026-03-23T09:21:16.158, pkg='com.google.android.apps.maps', directClick=true}, AppShow{dateTime=2026-03-23T08:59:58.938, pkg='com.google.android.youtube', directClick=true}, AppShow{dateTime=2026-03-22T22:29:12.685, pkg='com.android.chrome', directClick=true}, AppShow{dateTime=2026-03-22T22:21:44.888, pkg='com.oplus.camera', directClick=true}, AppShow{dateTime=2026-03-22T21:58:52.099, pkg='com.openai.chatgpt', directClick=true}, AppShow{dateTime=2026-03-22T20:04:27.797, pkg='com.coloros.gallery3d', directClick=true}, AppShow{dateTime=2026-03-22T20:00:46.838, pkg='com.google.android.apps.messaging', directClick=true}, AppShow{dateTime=2026-03-22T19:12:30.701, pkg='com.google.android.keep', directClick=true}, AppShow{dateTime=2026-03-22T18:53:34.806, pkg='com.onyx.galaxy.global.note', directClick=true}, AppShow{dateTime=2026-03-22T18:44:25.422, pkg='in.swiggy.android.toing', directClick=true}]
+03-23 17:48:39.211 10462 10474 D AppRecommend_AppRecommendAlgorithm: ComputeNextApp result is {com.whatsapp=AppOrder{pkg='com.whatsapp', score=35.894287', hourWeight=0.0', dayWeight=0.0}, com.pratham.learning=AppOrder{pkg='com.pratham.learning', score=25.389153', hourWeight=0.0', dayWeight=0.0}, com.android.chrome=AppOrder{pkg='com.android.chrome', score=10.815442', hourWeight=0.0', dayWeight=0.0}, com.jio.media.jiobeats=AppOrder{pkg='com.jio.media.jiobeats', score=4.3433366', hourWeight=0.0', dayWeight=0.0}, com.google.android.apps.youtube.creator=AppOrder{pkg='com.google.android.apps.youtube.creator', score=8.042171', hourWeight=0.0', dayWeight=0.0}, com.coloros.calculator=AppOrder{pkg='com.coloros.calculator', score=11.197576', hourWeight=0.0', dayWeight=0.0}, com.suno.android=AppOrder{pkg='com.suno.android', score=4.794917', hourWeight=0.0', dayWeight=0.0}, com.Slack=AppOrder{pkg='com.Slack', score=6.4785347', hourWeight=0.0', dayWeight=0.0}, com.google.android.contacts=AppOrder{pkg='com.google.android.contacts', score=1.6105622', hourWeight=0.0', dayWeight=0.0}, com.google.android.dialer=AppOrder{pkg='com.google.android.dialer', score=17.044088', hourWeight=0.0', dayWeight=0.0}, com.google.android.apps.messaging=AppOrder{pkg='com.google.android.apps.messaging', score=2.193033', hourWeight=0.0', dayWeight=0.0}, com.phonepe.app=AppOrder{pkg='com.phonepe.app', score=10.696872', hourWeight=0.0', dayWeight=0.0}, com.grofers.customerapp=AppOrder{pkg='com.grofers.customerapp', score=2.3756804', hourWeight=0.0', dayWeight=0.0}, com.linkedin.android=AppOrder{pkg='com.linkedin.android', score=0.41754985', hourWeight=0.0', dayWeight=0.0}, com.google.android.gm=AppOrder{pkg='com.google.android.gm', score=4.432326', hourWeight=0.0', dayWeight=0.0}, com.olacabs.customer=AppOrder{pkg='com.olacabs.customer', score=0.22792023', hourWeight=0.0', dayWeight=0.0}, com.google.android.youtube=AppOrder{pkg='com.google.android.youtube', score=5.7583184', hourWeight=0.0', dayWeight=0.0}, com.google.android.apps.maps=AppOrder{pkg='com.google.android.apps.maps', score=4.080048', hourWeight=0.0', dayWeight=0.0}, com.instagram.android=AppOrder{pkg='com.instagram.android', score=2.7364948', hourWeight=0.0', dayWeight=0.0}, com.google.android.apps.youtube.music=AppOrder{pkg='com.google.android.apps.youtube.music', score=0.556374', hourWeight=0.0', dayWeight=0.0}, com.awt.kalnirnay=AppOrder{pkg='com.awt.kalnirnay', score=0.16161616', hourWeight=0.0', dayWeight=0.0}, com.openai.chatgpt=AppOrder{pkg='com.openai.chatgpt', score=0.1015873', hourWeight=0.0', dayWeight=0.0}, com.google.android.calendar=AppOrder{pkg='com.google.android.calendar', score=0.3699311', hourWeight=0.0', dayWeight=0.0}, com.google.android.apps.tachyon=AppOrder{pkg='com.google.android.apps.tachyon', score=0.28218699', hourWeight=0.0', dayWeight=0.0}}
+03-23 17:48:39.212 10462 10474 D AppRecommend_AppRecommendAlgorithm: app com.pratham.learning hourWeight is 0.02 and dayWeight is 0.1, score is 1.5741276
+03-23 17:48:39.212 10462 10474 I AppRecommend_AppRecommendAlgorithm: After sort is [AppOrder{pkg='com.pratham.learning', score=1.5741276', hourWeight=0.02', dayWeight=0.1}, AppOrder{pkg='com.whatsapp', score=1.173467', hourWeight=0.041208792', dayWeight=0.7}, AppOrder{pkg='com.phonepe.app', score=0.5739785', hourWeight=0.048780486', dayWeight=0.1}, AppOrder{pkg='com.google.android.gm', score=0.40913782', hourWeight=0.07692308', dayWeight=0.2}, AppOrder{pkg='com.coloros.calculator', score=0.12171278', hourWeight=0.072463766', dayWeight=0.3}, AppOrder{pkg='com.google.android.youtube', score=0.11872821', hourWeight=0.10309278', dayWeight=0.4}, AppOrder{pkg='com.google.android.dialer', score=0.10054098', hourWeight=0.039325844', dayWeight=0.3}, AppOrder{pkg='com.android.chrome', score=0.09404733', hourWeight=0.04347826', dayWeight=0.4}, AppOrder{pkg='com.Slack', score=0.024474466', hourWeight=0.033333335', dayWeight=0.1}, AppOrder{pkg='com.google.android.apps.youtube.music', score=0.020864027', hourWeight=0.75', dayWeight=0.1}, AppOrder{pkg='com.google.android.apps.youtube.creator', score=0.008042171', hourWeight=0.02', dayWeight=0.1}, AppOrder{pkg='com.suno.android', score=0.0047949175', hourWeight=0.02', dayWeight=0.1}, AppOrder{pkg='com.google.android.apps.messaging', score=0.004568819', hourWeight=0.041666668', dayWeight=0.1}, AppOrder{pkg='com.google.android.apps.maps', score=0.004434835', hourWeight=0.02173913', dayWeight=0.1}, AppOrder{pkg='com.jio.media.jiobeats', score=0.004343337', hourWeight=0.02', dayWeight=0.1}, AppOrder{pkg='com.instagram.android', score=0.0027364949', hourWeight=0.02', dayWeight=0.1}, AppOrder{pkg='com.grofers.customerapp', score=0.0023756805', hourWeight=0.02', dayWeight=0.1}, AppOrder{pkg='com.google.android.contacts', score=0.0016105623', hourWeight=0.02', dayWeight=0.1}, AppOrder{pkg='com.openai.chatgpt', score=6.5540196E-4', hourWeight=0.12903225', dayWeight=0.1}, AppOrder{pkg='com.linkedin.android', score=4.1754986E-4', hourWeight=0.02', dayWeight=0.1}, AppOrder{pkg='com.google.android.calendar', score=3.699311E-4', hourWeight=0.02', dayWeight=0.1}, AppOrder{pkg='com.google.android.apps.tachyon', score=2.82187E-4', hourWeight=0.02', dayWeight=0.1}, AppOrder{pkg='com.olacabs.customer', score=2.2792025E-4', hourWeight=0.02', dayWeight=0.1}, AppOrder{pkg='com.awt.kalnirnay', score=1.6161618E-4', hourWeight=0.02', dayWeight=0.1}]
+03-23 17:48:39.212 10462 10474 D AppRecommend_AppRecallManager: Dispatch apps, size=24, apps=[AppInfo[pkg=com.pratham.learning, appType=0,iconSource=system, recallType=algorithm, deepLink=0,utrackClickUrl=0, utrackExposeUrl=0,icon=0, apiSource=null, typeCode=null, mode=0, advFinalScore=null,  routePage=0,title=null, subTitle=null, adSize=null,probability=0], AppInfo[pkg=com.whatsapp, appType=0,iconSource=system, recallType=algorithm, deepLink=0,utrackClickUrl=0, utrackExposeUrl=0,icon=0, apiSource=null, typeCode=null, mode=0, advFinalScore=null,  routePage=0,title=null, subTitle=null, adSize=null,probability=0], AppInfo[pkg=com.phonepe.app, appType=0,iconSource=system, recallType=algorithm, deepLink=0,utrackClickUrl=0, utrackExposeUrl=0,icon=0, apiSource=null, typeCode=null, mode=0, advFinalScore=null,  routePage=0,title=null, subTitle=null, adSize=null,probability=0], AppInfo[pkg=com.google.android.gm, appType=0,iconSource=system, recallType=algorithm, deepLink=0,utrackClickUrl=0, utrackExposeUrl=0,icon=0, apiSource=null, typeCode=null, mode=0, advFinalScore=null,  routePage=0,title=null, subTitle=null, adSize=null,probability=0], AppInfo[pkg=com.coloros.calculator, appType=0,iconSource=system, recallType=algorithm, deepLink=0,utrackClickUrl=0, utrackExposeUrl=0,icon=0, apiSource=null, typeCode=null, mode=0, advFinalScore=null,  routePage=0,title=null, subTitle=null, adSize=null,probability=0], AppInfo[pkg=com.google.android.youtube, appType=0,iconSource=system, recallType=algorithm, deepLink=0,utrackClickUrl=0, utrackExposeUrl=0,icon=0, apiSource=null, typeCode=null, mode=0, advFinalScore=null,  routePage=0,title=null, subTitle=null, adSize=null,probability=0], AppInfo[pkg=com.google.android.dialer, appType=0,iconSource=system, recallType=algorithm, deepLink=0,utrackClickUrl=0, utrackExposeUrl=0,icon=0, apiSource=null, typeCode=null, mode=0, advFinalScore=null,  routePage=0,title=null, subTitle=null, adSize=null,probability=0], AppInfo[pkg=com.android.chrome, appType=0,iconSource=system, recallType=algorithm, deepLink=0,utrackClickUrl=0, utrackExposeUrl=0,icon=0, apiSource=null, typeCode=null, mode=0, advFinalScore=null,  routePage=0,title=null, subTitle=null, adSize=null,probability=0], AppInfo[pkg=com.Slack, appType=0,iconSource=system, recallType=algorithm, deepLink=0,utrackClickUrl=0, utrackExposeUrl=0,icon=0, apiSource=null, typeCode=null, mode=0, advFinalScore=null,  routePage=0,title=null, subTitle=null, adSize=null,probability=0], AppInfo[pkg=com.google.android.apps.youtube.music, appType=0,iconSource=system, recallType=algorithm, deepLink=0,utrackClickUrl=0, utrackExposeUrl=0,icon=0, apiSource=null, typeCode=null, mode=0, advFinalScore=null,  routePage=0,title=null, subTitle=null, adSize=null,probability=0], AppInfo[pkg=com.google.android.apps.youtube.creator, appType=0,iconSource=system, recallType=algorithm, deepLink=0,utrackClickUrl=0, utrackExposeUrl=0,icon=0, apiSource=null, typeCode=null, mode=0, advFinalScore=null,  routePage=0,title=null, subTitle=null, adSize=null,probability=0], AppInfo[pkg=com.suno.android, appType=0,iconSource=system, recallType=algorithm, deepLink=0,utrackClickUrl=0, utrackExposeUrl=0,icon=0, apiSource=null, typeCode=null, mode=0, advFinalScore=null,  routePage=0,title=null, subTitle=null, adSize=null,probability=0], AppInfo[pkg=com.google.android.apps.messaging, appType=0,iconSource=system, recallType=algorithm, deepLink=0,utrackClickUrl=0, utrackExposeUrl=0,icon=0, apiSource=null, typeCode=null, mode=0, advFinalScore=null,  routePage=0,title=null, subTitle=null, adSize=null,probability=0], AppInfo[pkg=com.google.android.apps.maps, appType=0,iconSource=system, recallType=algorithm, deepLink=0,utrackClickUrl=0, utrackExposeUrl=0,icon=0, apiSource=null, typeCode=null, mode=0, advFinalScore=null,  routePage=0,title=null, subTitle=null, adSize=null,probability=0], AppInfo[pkg=com.jio.media.jiobeats, appType=0,iconSource=system, recallType=algorithm, deepLink=0,utrackClickUrl=0, utrackExposeUrl=0,icon=0, apiSource=null, typeCode=null, mode=0, advFinalScore=null,  routePage=0,title=null, s
+03-23 17:48:39.215 10462 10474 D SceneSDK.1.0.4-SNAPSHOT.10462.DeepThinkerAppSwitchAbility: onAppSwitchEvent: AppSwitchEvent(timeStamp=1774268319194, eventType=1, targetName=com.pratham.learning, firstStart=true, multiApp=false, windowMode=1, resumingPackageName=, resumingActivityName=, isResumingMultiApp=false, isResumingFirstStart=false)
+03-23 17:48:39.215 10462 10474 I AppRecommend_AppRecommendAdapter: receive app recommend from AppSwitchEvent(eventId=1, switchInfo=AppSwitchInfo(targetName=com.pratham.learning, firstStart=true, multiApp=false, windowMode=1, resumingPackageName=, resumingActivityName=, isResumingFirstStart=false, isResumingMultiApp=false))
+03-23 17:48:39.215 10462 10474 D AppRecommend_AppRecommendAdapter: notify app active com.pratham.learning and info [AppInfo[pkg=com.pratham.learning, appType=0,iconSource=system, recallType=app_active_event, deepLink=0,utrackClickUrl=0, utrackExposeUrl=0,icon=0, apiSource=null, typeCode=null, mode=0, advFinalScore=null,  routePage=0,title=null, subTitle=null, adSize=null,probability=0]]
+03-23 17:48:39.224 10462 10491 D SceneSDK.1.0.4-SNAPSHOT.10462.DeepThinkerAppSwitchAbility: onAppSwitchEvent: AppSwitchEvent(timeStamp=1774268319194, eventType=1, targetName=com.pratham.learning, firstStart=true, multiApp=false, windowMode=1, resumingPackageName=, resumingActivityName=, isResumingMultiApp=false, isResumingFirstStart=false)
+03-23 17:48:39.224 10462 10491 I metis_v2_AppSwitchDataCollector: AppEnterEvent =  com.pratham.learning, windowMode = 1,firstStart = true
+03-23 17:48:39.224 10462 10491 W metis_v2_AppSwitchDataCollector: fenceKey = com.oplus.metis:TOP_APPLICATION, getExits = [], getEnters = [] packageName = com.pratham.learning
+03-23 17:48:39.234 10462 11606 D AppRecommend_AppCombinationProcessor: recent appList is appList: com.pratham.learning  com.whatsapp  com.phonepe.app  com.google.android.gm  com.coloros.calculator  com.google.android.youtube  com.google.android.dialer  com.android.chrome  com.Slack  com.google.android.apps.youtube.music  com.google.android.apps.youtube.creator  com.suno.android  com.google.android.apps.messaging  com.google.android.apps.maps  com.jio.media.jiobeats  com.instagram.android  com.grofers.customerapp  com.google.android.contacts  com.openai.chatgpt  com.linkedin.android  com.google.android.calendar  com.google.android.apps.tachyon  com.olacabs.customer  com.awt.kalnirnay 
+03-23 17:48:39.234 10462 11606 D AppRecommend_AppSendProcessor: unInstall app list: com.pratham.learning com.whatsapp com.phonepe.app com.google.android.gm com.coloros.calculator com.google.android.youtube com.google.android.dialer com.android.chrome com.Slack com.google.android.apps.youtube.music com.suno.android com.google.android.apps.messaging com.google.android.apps.maps com.jio.media.jiobeats com.grofers.customerapp com.google.android.contacts com.openai.chatgpt com.linkedin.android com.google.android.calendar com.google.android.apps.tachyon com.olacabs.customer com.awt.kalnirnay 
+03-23 17:48:39.234 10462 11606 I AppRecommend_AppDispatcher: dispatch app list:22,Total packages:com.pratham.learning,com.whatsapp,com.phonepe.app,com.google.android.gm,com.coloros.calculator,com.google.android.youtube,com.google.android.dialer,com.android.chrome,com.Slack,com.google.android.apps.youtube.music,com.suno.android,com.google.android.apps.messaging,com.google.android.apps.maps,com.jio.media.jiobeats,com.grofers.customerapp,com.google.android.contacts,com.openai.chatgpt,com.linkedin.android,com.google.android.calendar,com.google.android.apps.tachyon,com.olacabs.customer,com.awt.kalnirnay
+03-23 17:48:39.234 10462 11606 D AppRecommend_AppRecommendStatistic: upload app click: (com.pratham.learning, 1774268319193) and {com.pratham.learning=1}
+03-23 17:48:39.447  4364  4364 D nativeloader: Configuring clns-9 for other apk /data/app/~~ogsFsFbRcZBxaxVlvoOZ6A==/com.pratham.learning-HwBdlpWVvVVKpZ86_xE89A==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~ogsFsFbRcZBxaxVlvoOZ6A==/com.pratham.learning-HwBdlpWVvVVKpZ86_xE89A==/lib/arm64:/data/app/~~ogsFsFbRcZBxaxVlvoOZ6A==/com.pratham.learning-HwBdlpWVvVVKpZ86_xE89A==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.pratham.learning
+03-23 17:48:39.458  4364  4364 V GraphicsEnvironment: com.pratham.learning is not listed in per-application setting
+03-23 17:48:39.458  4364  4364 V GraphicsEnvironment: com.pratham.learning is not listed in ANGLE allowlist or settings, returning default
+03-23 17:48:39.492  1996  2970 D Transition: finishTransition ar ActivityRecord{228529049 u0 com.android.launcher/.Launcher t5}, isVisibleRequested=false, state=PAUSED, visibleAtTransitionEndTokens={WallpaperWindowToken{d6a3130 showWhenLocked=false}, ActivityRecord{240552689 u0 com.pratham.learning/.MainActivity t8043}}, this=TransitionRecord{c7d393 id=3893 track=0 type=OPEN flags=0x0 state=2 c=[
+03-23 17:48:39.492  1996  2970 D Transition:    ChangeInfo{e3e0fd0 container=Task{558bb91 #8043 type=standard I=com.pratham.learning/.MainActivity} flags=0x10}
+03-23 17:48:39.492  1996  2970 D Transition:    ChangeInfo{273b2ce container=ActivityRecord{240552689 u0 com.pratham.learning/.MainActivity t8043} flags=0x0}
+03-23 17:48:39.493  1996  2970 D Transition: finishTransition ar ActivityRecord{240552689 u0 com.pratham.learning/.MainActivity t8043}, isVisibleRequested=true, state=RESUMED, visibleAtTransitionEndTokens={WallpaperWindowToken{d6a3130 showWhenLocked=false}, ActivityRecord{240552689 u0 com.pratham.learning/.MainActivity t8043}}, this=TransitionRecord{c7d393 id=3893 track=0 type=OPEN flags=0x0 state=2 c=[
+03-23 17:48:39.493  1996  2970 D Transition:    ChangeInfo{e3e0fd0 container=Task{558bb91 #8043 type=standard I=com.pratham.learning/.MainActivity} flags=0x10}
+03-23 17:48:39.493  1996  2970 D Transition:    ChangeInfo{273b2ce container=ActivityRecord{240552689 u0 com.pratham.learning/.MainActivity t8043} flags=0x0}
+03-23 17:48:39.493  1996  2970 I OplusAppSwitchManagerService:  handleAppVisible , r = ActivityRecord{240552689 u0 com.pratham.learning/.MainActivity t8043}
+03-23 17:48:39.495  1996  2970 D OplusTransitionController:    ChangeInfo{e3e0fd0 container=Task{558bb91 #8043 type=standard I=com.pratham.learning/.MainActivity} flags=0x10}
+03-23 17:48:39.495  1996  2970 D OplusTransitionController:    ChangeInfo{273b2ce container=ActivityRecord{240552689 u0 com.pratham.learning/.MainActivity t8043} flags=0x0}
+03-23 17:48:39.495  1996  2970 D FlexibleTaskTransitionController:    ChangeInfo{e3e0fd0 container=Task{558bb91 #8043 type=standard I=com.pratham.learning/.MainActivity} flags=0x10}
+03-23 17:48:39.495  1996  2970 D FlexibleTaskTransitionController:    ChangeInfo{273b2ce container=ActivityRecord{240552689 u0 com.pratham.learning/.MainActivity t8043} flags=0x0}
+03-23 17:48:39.506  1996  2024 D RefreshRate:     | COURSE[; Win preferred rateId=0, appReqFirst=false, data= RateData{} ;win name:Splash Screen com.pratham.learning]
+03-23 17:48:39.522  4364  4364 D ReactNativeFirebaseApp: received application context.
+03-23 17:48:39.608  4364  4398 W ratham.learning: ClassLoaderContext classpath element checksum mismatch. expected=1425336357, found=491597321 (DLC[];PCL[base.apk*1425336357]{PCL[/system/framework/org.apache.http.legacy.jar*2241503858]#PCL[/system/framework/com.android.location.provider.jar*1570284764]#PCL[/system/framework/com.android.media.remotedisplay.jar*487574312]#PCL[/system_ext/framework/com.android.extensions.appfunctions.jar*2880224042]#PCL[/system_ext/framework/androidx.window.extensions.jar*2427015362]#PCL[/system_ext/framework/androidx.window.sidecar.jar*621982722]} | DLC[];PCL[/data/app/~~ogsFsFbRcZBxaxVlvoOZ6A==/com.pratham.learning-HwBdlpWVvVVKpZ86_xE89A==/base.apk*491597321])
+03-23 17:48:39.623  4364  4364 D nativeloader: Load libreact_featureflagsjni.so using class loader ns clns-9 (caller=/data/app/~~ogsFsFbRcZBxaxVlvoOZ6A==/com.pratham.learning-HwBdlpWVvVVKpZ86_xE89A==/base.apk!classes19.dex): dlopen failed: library "libreact_featureflagsjni.so" not found
+03-23 17:48:39.623  4364  4364 D AndroidRuntime: Shutting down VM
+03-23 17:48:39.625  4364  4364 E AndroidRuntime: FATAL EXCEPTION: main
+03-23 17:48:39.625  4364  4364 E AndroidRuntime: Process: com.pratham.learning, PID: 4364
+03-23 17:48:39.625  4364  4364 E AndroidRuntime: java.lang.UnsatisfiedLinkError: dlopen failed: library "libreact_featureflagsjni.so" not found
+03-23 17:48:39.625  4364  4364 E AndroidRuntime: 	at java.lang.Runtime.loadLibrary0(Runtime.java:1097)
+03-23 17:48:39.625  4364  4364 E AndroidRuntime: 	at java.lang.Runtime.loadLibrary0(Runtime.java:1019)
+03-23 17:48:39.625  4364  4364 E AndroidRuntime: 	at java.lang.System.loadLibrary(System.java:1765)
+03-23 17:48:39.625  4364  4364 E AndroidRuntime: 	at com.facebook.soloader.nativeloader.SystemDelegate.loadLibrary(SystemDelegate.java:24)
+03-23 17:48:39.625  4364  4364 E AndroidRuntime: 	at com.facebook.soloader.nativeloader.NativeLoader.loadLibrary(NativeLoader.java:52)
+03-23 17:48:39.625  4364  4364 E AndroidRuntime: 	at com.facebook.soloader.nativeloader.NativeLoader.loadLibrary(NativeLoader.java:30)
+03-23 17:48:39.625  4364  4364 E AndroidRuntime: 	at com.facebook.soloader.SoLoader.loadLibrary(SoLoader.java:812)
+03-23 17:48:39.625  4364  4364 E AndroidRuntime: 	at com.facebook.react.internal.featureflags.ReactNativeFeatureFlagsCxxInterop.<clinit>(ReactNativeFeatureFlagsCxxInterop.kt:28)
+03-23 17:48:39.625  4364  4364 E AndroidRuntime: 	at com.facebook.react.internal.featureflags.ReactNativeFeatureFlagsCxxAccessor.override(ReactNativeFeatureFlagsCxxAccessor.kt:905)
+03-23 17:48:39.625  4364  4364 E AndroidRuntime: 	at com.facebook.react.internal.featureflags.ReactNativeFeatureFlags.override(ReactNativeFeatureFlags.kt:576)
+03-23 17:48:39.625  4364  4364 E AndroidRuntime: 	at com.facebook.react.defaults.DefaultNewArchitectureEntryPoint.load(DefaultNewArchitectureEntryPoint.kt:101)
+03-23 17:48:39.625  4364  4364 E AndroidRuntime: 	at com.facebook.react.defaults.DefaultNewArchitectureEntryPoint.load(DefaultNewArchitectureEntryPoint.kt:43)
+03-23 17:48:39.625  4364  4364 E AndroidRuntime: 	at com.pratham.learning.MainApplication.onCreate(MainApplication.kt:40)
+03-23 17:48:39.625  4364  4364 E AndroidRuntime: 	at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:1401)
+03-23 17:48:39.625  4364  4364 E AndroidRuntime: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:8633)
+03-23 17:48:39.625  4364  4364 E AndroidRuntime: 	at android.app.ActivityThread.-$$Nest$mhandleBindApplication(Unknown Source:0)
+03-23 17:48:39.625  4364  4364 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2798)
+03-23 17:48:39.625  4364  4364 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:115)
+03-23 17:48:39.625  4364  4364 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:298)
+03-23 17:48:39.625  4364  4364 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:408)
+03-23 17:48:39.625  4364  4364 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:9964)
+03-23 17:48:39.625  4364  4364 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+03-23 17:48:39.625  4364  4364 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:613)
+03-23 17:48:39.625  4364  4364 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1074)
+03-23 17:48:39.626  1996  2776 I mtkpower_client: [PowerHal_Wrap_notifyAppState] com.pratham.learning/com.pratham.learning pid=4364 activityId:4364 state:3
+03-23 17:48:39.627  1996  2984 D OplusAppStartupMonitor: notifyUnstableAppInfo: Bundle[{unstableTime=1774268319626, reason=crash, userId=0, exceptionMsg=dlopen failed: library "libreact_featureflagsjni.so" not found, exceptionClass=java.lang.UnsatisfiedLinkError, app_channel_type=unstable, packageName=com.pratham.learning, unstable_restrict_switch=true}]
+03-23 17:48:39.627  1163  1163 I vendor.mediatek.hardware.mtkpower_applist-service.mediatek: packName: com.pratham.learning actName: com.pratham.learning pid: 4364 uid: 10448 state: 3
+03-23 17:48:39.627  1163  1163 I MTK_APPList: [notifyAPPstate] com.pratham.learning/com.pratham.learning, pid=4364, uid=10448, state:DEAD, fps:120, win:0
+03-23 17:48:39.627  1163  1163 I MTK_APPList: [notifyAPPstate] pack:com.pratham.learning, pid:4364, STATE_DEAD
+03-23 17:48:39.631  1996  2776 W OplusEapManager handleErrorInfo sendEvent: : com.pratham.learning happenedcrash
+03-23 17:48:39.632  1996  2776 W ActivityTaskManager:   Force finishing activity com.pratham.learning/.MainActivity
+03-23 17:48:39.634  2529  2617 V WindowManagerShell: Transition requested (#3894): android.os.BinderProxy@1a0157a TransitionRequestInfo { type = CLOSE, triggerTask = TaskInfo{userId=0 taskId=8043 effectiveUid=10448 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.pratham.learning/.MainActivity mCallingUid=10235 } baseActivity=ComponentInfo{com.pratham.learning/com.pratham.learning.MainActivity} topActivity=ComponentInfo{com.pratham.learning/com.pratham.learning.MainActivity} origActivity=null realActivity=ComponentInfo{com.pratham.learning/com.pratham.learning.MainActivity}
+03-23 17:48:39.634  2529  2617 V WindowManagerShell:  topActivityInfo=ActivityInfo{6a44988 com.pratham.learning.MainActivity} launchCookies=[android.os.BinderProxy@849f509] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(269, 645 - 811, 1725) capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=-9 topActivityRequestOpenInBrowserEducationTimestamp=0
+03-23 17:48:39.634  1996  2382 I [UAH_CLIENT]: UahEventAcquire, cmdid:0, pkg:com.pratham.learning, identity:com.android.server.wm
+03-23 17:48:39.635  1996  2776 D ActivityTaskManager: setAppVisibility(Token{3143af6 ActivityRecord{240552689 u0 com.pratham.learning/.MainActivity t8043 f}}}, visible=false):  visible=true mVisibleRequested=true
+03-23 17:48:39.635  1996  2776 D ActivityTaskManager: setVisibility(Token{3143af6 ActivityRecord{240552689 u0 com.pratham.learning/.MainActivity t8043 f}}}, visible=false) defer commitVisibility for transition collecting
+03-23 17:48:39.636  1996  2776 I PowerHalWrapper: amsBoostNotify pid:4364,activity:com.pratham.learning.MainActivity, package:com.pratham.learning, mProcessCreatePackcom.pratham.learning 
+03-23 17:48:39.636  1996  2776 I mtkpower_client: [PowerHal_Wrap_notifyAppState] com.pratham.learning/com.pratham.learning.MainActivity pid=4364 activityId:240552689 state:0
+03-23 17:48:39.636  1163  1163 I vendor.mediatek.hardware.mtkpower_applist-service.mediatek: packName: com.pratham.learning actName: com.pratham.learning.MainActivity pid: 4364 uid: 10448 state: 0
+03-23 17:48:39.636  1163  1163 I MTK_APPList: [notifyAPPstate] com.pratham.learning/com.pratham.learning.MainActivity, pid=4364, uid=10448, state:PAUSED, fps:120, win:0
+03-23 17:48:39.638  1996  2776 I OplusHansManager : front pkg: com.android.launcher, uid: 10235, prev pkg: com.pratham.learning, prev uid: 10448
+03-23 17:48:39.642  1996  2598 I Osense-BaseDecisionMaker: notifySceneToAthenaPolicy: SCENE_LAUNCHER, bundle: Bundle[{prevPkgName=com.pratham.learning, curUid=10235, isGame=false, curPkgName=com.android.launcher, prevUid=10448}]
+03-23 17:48:39.642  1996  2991 I OplusHansManager : uid=10448, pkg=com.pratham.learning enter SM
+03-23 17:48:39.642  1996  2991 I OplusHansManager : uid=10448, pkg=com.pratham.learning R enter(), D stay=0
+03-23 17:48:39.643  1996  3011 I OPM-Process: resume pkg: com.android.launcher, uid:10235, prev pkg: com.pratham.learning, prev uid: 10448
+03-23 17:48:39.647  1996  2776 D FlexibleTaskController: onTaskFocusChanged prevTask:Task{558bb91 #8043 type=standard I=com.pratham.learning/.MainActivity} ,currentTask:Task{617b728 #5 type=home I=com.android.launcher/.Launcher}, reason: resumeTopActivity - onActivityStateChanged
+03-23 17:48:39.647  1996  2776 I PowerHalWrapper: amsBoostNotify pid:2743,activity:com.android.launcher.Launcher, package:com.android.launcher, mProcessCreatePackcom.pratham.learning 
+03-23 17:48:39.648  1163  1163 I MTK_APPList: [notifyAPPstate] pc:1, com.pratham.learning => com.android.launcher
+03-23 17:48:39.662  1996  2024 D Transition: collectOrderChanges onTopTasksEnd: [Task{a898222 #1 type=home}, Task{617b728 #5 type=home I=com.android.launcher/.Launcher}], reportedOnTop:null, mOnTopTasksStart: [Task{558bb91 #8043 type=standard I=com.pratham.learning/.MainActivity}], TDA child: [Task{172a92f #2 type=undefined}, Task{bb95509 #7967 type=standard A=10285:com.google.android.dialer}, Task{e42d19e #7970 type=standard A=10339:com.openai.chatgpt}, Task{2d910e8 #7972 type=standard A=10194:com.coloros.filemanager}, Task{ad4958e #7978 type=standard A=1000:com.android.settings.root}, Task{371b715 #8024 type=standard A=10379:com.whatsapp}, Task{8077039 #8016 type=standard A=10353:com.Slack}, Task{558bb91 #8043 type=standard I=com.pratham.learning/.MainActivity}, Task{a898222 #1 type=home}]
+03-23 17:48:39.662  1996  2024 D OplusFlexibleActivityTransitionManager: fixTransitType type result:2, targets: [ChangeInfo{e405695 container=Task{a898222 #1 type=home} flags=0x30}, ChangeInfo{80473aa container=Task{558bb91 #8043 type=standard I=com.pratham.learning/.MainActivity} flags=0x10}, ChangeInfo{49f3b9b container=WallpaperWindowToken{d6a3130 showWhenLocked=false} flags=0x0}]
+03-23 17:48:39.665  1996  2024 D OplusTransitionController: onTransactionReady, transition: 3894, info: {id=3894 t=CLOSE f=0x10 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{3f59bbe Task{a898222 #1 type=home}}} m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP leash=Surface(name=Task=1)/@0xac79ec3 sb=Rect(0, 0 - 1080, 2392) eb=Rect(0, 0 - 1080, 2392) epz=Point(1080, 2392) d=0 taskParent=-1},{WCT{RemoteToken{13c58fc Task{558bb91 #8043 type=standard I=com.pratham.learning/.MainActivity}}} m=CLOSE f=NONE leash=Surface(name=Task=8043)/@0x9c11082 sb=Rect(0, 0 - 1080, 2392) eb=Rect(0, 0 - 1080, 2392) epz=Point(1080, 2392) d=0 taskParent=-1},{m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{d6a3130 showWhenLocked=false})/@0x7303340 sb=Rect(0, 0 - 1080, 2392) eb=Rect(0, 0 - 1080, 2392) epz=Point(1080, 2392) d=0}] 
+03-23 17:48:39.665  1996  2024 D OplusTransitionController: , mNeedCanvasExitAnim=false, mMergeSecondTaskAnimation=false, mIsLaunchUnityStart=false, mIsLaunchFromAssistantByDefault=false, mSkipRemoteTransitionfalse, mIsStartFromKeyguard=false flags=0x0, mWCT=null, mIsOpenMergeToInValidPredictive=false}]}, targets : [ChangeInfo{e405695 container=Task{a898222 #1 type=home} flags=0x30}, ChangeInfo{80473aa container=Task{558bb91 #8043 type=standard I=com.pratham.learning/.MainActivity} flags=0x10}, ChangeInfo{49f3b9b container=WallpaperWindowToken{d6a3130 showWhenLocked=false} flags=0x0}], participants: {Task{558bb91 #8043 type=standard I=com.pratham.learning/.MainActivity}, Task{617b728 #5 type=home I=com.android.launcher/.Launcher}, Task{a898222 #1 type=home}, WallpaperWindowToken{d6a3130 showWhenLocked=false}, ActivityRecord{228529049 u0 com.android.launcher/.Launcher t5}, ActivityRecord{240552689 u0 com.pratham.learning/.MainActivity t8043 f}}}
+03-23 17:48:39.666  1996  2024 W WindowManager: captureTaskSnapshot mSnapshotMode= 0 source=Task{558bb91 #8043 type=standard I=com.pratham.learning/.MainActivity}
+03-23 17:48:39.679  1996  2024 D TaskSnapshotCache: putSnapshot mRunningCache top= ActivityRecord{240552689 u0 com.pratham.learning/.MainActivity t8043 f}}, mTaskId=8043, snapshot=TaskSnapshot{ mId=1774268319666 mCaptureTime=337255048166991 mTopActivityComponent=com.pratham.learning/.MainActivity mSnapshot=android.hardware.HardwareBuffer@f353d6f (1080x2392) mColorSpace=sRGB IEC61966-2.1 (id=0, model=RGB) mOrientation=1 mRotation=0 mTaskSize=Point(1080, 2392) mOplusCompatMode=false mTopActivityBounds=[0,0][1080,2392] mHasDimLayer=false mContentInsets=[0,110][0,132] mLetterboxInsets=[0,0][0,0] mIsLowResolution=false mIsRealSnapshot=true mWindowingMode=1 mAppearance=24 mIsTranslucent=true mHasImeSurface=false mInternalReferences=2 mUiMode=21, mAppIdMap size= 6
+03-23 17:48:39.681  1996  2020 V WindowManager: Sent Transition (#3894) createdAt=03-23 17:48:39.632 via request=TransitionRequestInfo { type = CLOSE, triggerTask = TaskInfo{userId=0 taskId=8043 effectiveUid=10448 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.pratham.learning/.MainActivity mCallingUid=10235 } baseActivity=ComponentInfo{com.pratham.learning/com.pratham.learning.MainActivity} topActivity=ComponentInfo{com.pratham.learning/com.pratham.learning.MainActivity} origActivity=null realActivity=ComponentInfo{com.pratham.learning/com.pratham.learning.MainActivity}
+03-23 17:48:39.681  1996  2020 V WindowManager:  numActivities=1 lastActiveTime=337254544 supportsSplitScreenMultiWindow=true supportsMultiWindow=true supportsPocketStudioMultiWindow=true isInFlexibleEmbedded = false uid = 10448 pid = 4364 resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{13c58fc Task{558bb91 #8043 type=standard I=com.pratham.learning/.MainActivity}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0)
+03-23 17:48:39.681  1996  2020 V WindowManager:  topActivityInfo=ActivityInfo{574b02e com.pratham.learning.MainActivity} launchCookies=[android.os.BinderProxy@1f137cf] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(269, 645 - 811, 1725) capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=-9 topActivityRequestOpenInBrowserEducationTimestamp=0
+03-23 17:48:39.681  1996  2020 V WindowManager:  mOplusExtraBundle = Bundle[{androidx.flexible.taskFrame=Rect(0, 0 - 0, 0), androidx.flexible.Alpha=1.0, androidx.activity.task.attach.blur=0, androidx.activity.LaunchInsensible=0, androidx.activity.LaunchCornerRadius=0, key_flexible_task_state=0, topActivitySupportAppInnerSplit=false, key_flexible_task_animating_type=-1, key_flexible_task_root_activity_processname=com.pratham.learning, androidx.activity.LaunchScenario=0, is_oplus_clone_task=false, flexible_super_mini_state=false, topRunningActivityHash=240552689, androidx.activity.LaunchScale=1.0, androidx.activity.LaunchShadowRadius=0, is_transient_hide_for_task_info=false, key_flexible_task_root_activity_pid=4364, key_flexible_task_root_activity_uid=10448}]}, pipChange = null, remoteTransition = null, displayChange = null, flags = 16, debugId = 3894 }
+03-23 17:48:39.681  1996  2020 V WindowManager:         {WCT{RemoteToken{13c58fc Task{558bb91 #8043 type=standard I=com.pratham.learning/.MainActivity}}} m=CLOSE f=NONE leash=Surface(name=Task=8043)/@0x9c11082 sb=Rect(0, 0 - 1080, 2392) eb=Rect(0, 0 - 1080, 2392) epz=Point(1080, 2392) d=0 taskParent=-1},
+03-23 17:48:39.748  1996  2188 I ActivityManager: Death received, pid = 4364, processName = com.pratham.learning for thread android.os.BinderProxy@cc2ccea
+03-23 17:48:39.748  1996  2651 I ActivityManager: Process com.pratham.learning (pid 4364) has died: prcp TOP 
+03-23 17:48:39.753  1996  3964 I OStatsManager_Calc: add screen power pkgName = com.pratham.learning, uid = 10448, power = 171.6899999976158, is Fg = true, fore size = 2, mScale = 1.0
+03-23 17:48:39.753  1996  3964 I OStatsManager_Calc: noteBeforePkgSwitch change = false, curTime = 337255121, com.pratham.learning, fg = true
+03-23 17:48:39.753  1996  3964 I OStatsManager_OplusBatteryStatsManager: updateStateTime: PkgName = com.pratham.learning, uid = 10448, state to em, mForegroundCnt = 0, isFg = false
+03-23 17:48:39.754  1996  3129 I OplusHansManager : onUidGone(), 10448 com.pratham.learning exit SM
+03-23 17:48:39.754  1996  3129 I OplusHansManager : onUidGone(),  keep: 10448 com.pratham.learning alarm
+03-23 17:48:39.755  1996  2991 I OplusHansManager : uid=10448, pkg=com.pratham.learning R exit SM
+03-23 17:48:39.755  1996  2991 I OplusHansManager : uid=10448, pkg=com.pratham.learning R exit(), R stay=0
+03-23 17:48:39.756  1996  2651 I mtkpower_client: [PowerHal_Wrap_notifyAppState] com.pratham.learning/com.pratham.learning pid=4364 activityId:4364 state:3
+03-23 17:48:39.756  1996  2033 I UserAwareMgr: process killed: {pkgName='com.pratham.learning', serviceName='', procName=com.pratham.learning, pid=4364, uid=10448, appId=0, owner='null', flags='fg1', renderTid=0, hwuiTids=null, glTids=null, threadInfos=null, mVideoActivityList=[], mStates=0}
+03-23 17:48:39.756  1996  2033 I UserAwareMgr: handleProcessKilled, pkgName: com.pratham.learning, pid: 4364
+03-23 17:48:39.759  1163  1163 I vendor.mediatek.hardware.mtkpower_applist-service.mediatek: packName: com.pratham.learning actName: com.pratham.learning pid: 4364 uid: 10448 state: 3
+03-23 17:48:39.759  1163  1163 I MTK_APPList: [notifyAPPstate] com.pratham.learning/com.pratham.learning, pid=4364, uid=10448, state:DEAD, fps:120, win:0
+03-23 17:48:39.759  1163  1163 I MTK_APPList: [notifyAPPstate] pack:com.pratham.learning, pid:4364, STATE_DEAD
+03-23 17:48:39.762  1996  2651 D ActivityTaskManager: removeAppToken: ActivityRecord{240552689 u0 com.pratham.learning/.MainActivity t8043 f}} delayed=true parent=Task{558bb91 #8043 type=standard I=com.pratham.learning/.MainActivity} animating=true Callers=com.android.server.wm.DisplayContent.removeAppToken:1759 com.android.server.wm.ActivityRecord.removeFromHistory:4989 com.android.server.wm.ActivityRecord.handleAppDied:5348 com.android.server.wm.WindowProcessController.handleAppDied:1709 
+03-23 17:48:39.762  1996  2651 D ActivityTaskManager: removeStartingWindowAnimation starting ActivityRecord{240552689 u0 com.pratham.learning/.MainActivity t8043 f}} startingWindow=null ,startingView=com.android.server.wm.StartingSurfaceController$StartingSurface@35494b9,Callers=com.android.server.wm.ActivityRecord.removeStartingWindow:3409 com.android.server.wm.ActivityRecord.onRemovedFromDisplay:5422 com.android.server.wm.DisplayContent.removeAppToken:1759 com.android.server.wm.ActivityRecord.removeFromHistory:4989 com.android.server.wm.ActivityRecord.handleAppDied:5348 
+03-23 17:48:39.762  1996  2651 D OplusStartingWindowManager: interceptRemoveStartingWindow: packageName=com.pratham.learning,  componentName=com.pratham.learning/.MainActivity, isSnapshot=false, startingSurfaceRunnable=null, isDrawCompleted=false, hasSurfaceView=false, inTransition=true
+03-23 17:48:39.762  1996  2651 D OplusStartingWindowManager: interceptRemoveStartingWindow: hasSplashWindowFlag() return false for activity=ActivityRecord{240552689 u0 com.pratham.learning/.MainActivity t8043 f}}
+03-23 17:48:39.762  1996  2651 D TaskOrganizerController: TaskOrganizerController.removeStartingWindow: call wmshell to removeStartingWindow Task{558bb91 #8043 type=standard I=com.pratham.learning/.MainActivity}
+03-23 17:48:39.769  1213  2195 D AudioFlingerExtImpl: AudioFlingerExtImpl oplusSetParameters: keyvalue onForegroundActivitiesChanged=com.pratham.learning:foreground:0|10448:4364
+03-23 17:48:39.770  1996  2416 I WindowStateExtImpl: onSurfaceShowChange show = false mPackageName = com.pratham.learning parentPkgName = com.pratham.learning
+03-23 17:48:39.770  1996  2416 I WindowManager: Window{ace9773 u0 Splash Screen com.pratham.learning EXITING} state from HAS_DRAWN to NO_SURFACE; reason: destroySurface
+03-23 17:48:40.135  1996  2023 W ActivityTaskManager: Activity top resumed state loss timeout for ActivityRecord{240552689 u0 com.pratham.learning/.MainActivity t8043 f} isExiting}
+03-23 17:48:40.135  1996  2023 D OplusAppStartupConfigExt: ActivityChangedListener prePkg = com.pratham.learning  nextPkg = com.android.launcher
+03-23 17:48:40.135  1996  2023 I GameManagerServiceExt-GameManagerServiceExt: on FG change: com.pratham.learning|com.android.launcher
+03-23 17:48:40.136  1996  2023 I PowerHalWrapper: amsBoostNotify pid:2743,activity:com.android.launcher.Launcher, package:com.android.launcher, mProcessCreatePackcom.pratham.learning 
+03-23 17:48:40.136  1996  3127 D OplusEapManager: mTargetExitName :com.pratham.learning
+03-23 17:48:40.136  2463  2478 V DCSEX-AppSwitchManager: OnAppSwitchObserver: onAppExit, resuming = com.android.launcher, target = com.pratham.learning, is ResumingFirstStart =  false, is ResumingMultiApp =  false, extensionInfo =  Bundle[mParcelledData.dataSize=596]
+03-23 17:48:40.137  3036  5852 W Battery : AppSwitchDetectorV2: OnAppSwitchObserver: onAppExit , info = OplusAppExitInfo = {  targetName = com.pratham.learning hasResumingActivity = true resumingPackageName = com.android.launcher resumingActivityName = com.android.launcher.Launcher resumingWindowMode = 1 isResumingMultiApp = false isResumingFirstStart = false extension = Bundle[mParcelledData.dataSize=596]} lastReg=1774242680338
+03-23 17:48:40.138  3012  4237 I Athena  : AthenaDynamicReceiver: pre_app:com.pratham.learning, next_app:com.android.launcher(10235|2743)
+03-23 17:48:40.138  2463  6243 D DCSEX-AppLaunchEventRecorder: onAppSwitch from = com.pratham.learning to = com.android.launcher
+03-23 17:48:40.141  1996  2071 D OplusAppSwitchListener: Detect com.pratham.learning switch to background
+03-23 17:48:40.141  1996  2071 D OplusFeatureReduceBrightness: onAppExit , info = com.pratham.learning
+03-23 17:48:40.144 10462 10491 D SceneSDK.1.0.4-SNAPSHOT.10462.DeepThinkerAppSwitchAbility: onAppSwitchEvent: AppSwitchEvent(timeStamp=1774268320142, eventType=2, targetName=com.pratham.learning, firstStart=false, multiApp=false, windowMode=0, resumingPackageName=com.android.launcher, resumingActivityName=com.android.launcher.Launcher, isResumingMultiApp=false, isResumingFirstStart=false)
+03-23 17:48:40.144 10462 10491 I metis_v2_AppSwitchDataCollector: AppExitEvent =  com.pratham.learning, NextAppName = com.android.launcher
+03-23 17:48:40.148 10462 10476 D SceneSDK.1.0.4-SNAPSHOT.10462.DeepThinkerAppSwitchAbility: onAppSwitchEvent: AppSwitchEvent(timeStamp=1774268320142, eventType=2, targetName=com.pratham.learning, firstStart=false, multiApp=false, windowMode=0, resumingPackageName=com.android.launcher, resumingActivityName=com.android.launcher.Launcher, isResumingMultiApp=false, isResumingFirstStart=false)
+03-23 17:48:40.148 10462 10476 I AppRecommend_AppRecommendAdapter: receive app recommend from AppSwitchEvent(eventId=2, switchInfo=AppSwitchInfo(targetName=com.pratham.learning, firstStart=false, multiApp=false, windowMode=0, resumingPackageName=com.android.launcher, resumingActivityName=com.android.launcher.Launcher, isResumingFirstStart=false, isResumingMultiApp=false))
+03-23 17:48:40.208  1996  2886 D Transition:    ChangeInfo{80473aa container=Task{558bb91 #8043 type=standard I=com.pratham.learning/.MainActivity} flags=0x10}
+03-23 17:48:40.208  1996  2886 D Transition:    ChangeInfo{875c34d container=ActivityRecord{240552689 u0 com.pratham.learning/.MainActivity t8043 f} isExiting} flags=0x0}
+03-23 17:48:40.208  1996  2886 D Transition: finishTransition ar ActivityRecord{240552689 u0 com.pratham.learning/.MainActivity t8043 f} isExiting}, isVisibleRequested=false, state=DESTROYED, visibleAtTransitionEndTokens={WallpaperWindowToken{d6a3130 showWhenLocked=false}, ActivityRecord{228529049 u0 com.android.launcher/.Launcher t5}}, this=TransitionRecord{11cc711 id=3894 track=0 type=CLOSE flags=0x10 state=2 c=[
+03-23 17:48:40.208  1996  2886 D Transition:    ChangeInfo{80473aa container=Task{558bb91 #8043 type=standard I=com.pratham.learning/.MainActivity} flags=0x10}
+03-23 17:48:40.208  1996  2886 D Transition:    ChangeInfo{875c34d container=ActivityRecord{240552689 u0 com.pratham.learning/.MainActivity t8043 f} isExiting} flags=0x0}
+03-23 17:48:40.208  1996  2886 D ActivityTaskManager: commitVisibility: ActivityRecord{240552689 u0 com.pratham.learning/.MainActivity t8043 f} isExiting}: visible=false visibleRequested=false, isInTransition=false 
+03-23 17:48:40.208  1996  2886 D WindowManager: NFW_setClientVisible:ActivityRecord{240552689 u0 com.pratham.learning/.MainActivity t8043 f} isExiting} clientVisible:false
+03-23 17:48:40.209  1996  2886 D ActivityTaskManager: removeAppToken: ActivityRecord{240552689 u0 com.pratham.learning/.MainActivity t8043 f}} delayed=false parent=Task{558bb91 #8043 type=standard I=com.pratham.learning/.MainActivity} animating=false Callers=com.android.server.wm.ActivityRecord.removeImmediately:5363 com.android.server.wm.WindowToken.removeIfPossible:267 com.android.server.wm.WindowToken.handleCompleteDeferredRemoval:273 com.android.server.wm.WindowContainer.handleCompleteDeferredRemoval:1646 
+03-23 17:48:40.209 10462 10491 D AppRecommend_AppRecommendDecisionProvider: Get originData: [AppInfo[pkg=com.pratham.learning, appType=0,iconSource=system, recallType=algorithm, deepLink=0,utrackClickUrl=0, utrackExposeUrl=0,icon=0, apiSource=null, typeCode=null, mode=0, advFinalScore=null,  routePage=0,title=null, subTitle=null, adSize=null,probability=0], AppInfo[pkg=com.whatsapp, appType=0,iconSource=system, recallType=algorithm, deepLink=0,utrackClickUrl=0, utrackExposeUrl=0,icon=0, apiSource=null, typeCode=null, mode=0, advFinalScore=null,  routePage=0,title=null, subTitle=null, adSize=null,probability=0], AppInfo[pkg=com.phonepe.app, appType=0,iconSource=system, recallType=algorithm, deepLink=0,utrackClickUrl=0, utrackExposeUrl=0,icon=0, apiSource=null, typeCode=null, mode=0, advFinalScore=null,  routePage=0,title=null, subTitle=null, adSize=null,probability=0], AppInfo[pkg=com.google.android.gm, appType=0,iconSource=system, recallType=algorithm, deepLink=0,utrackClickUrl=0, utrackExposeUrl=0,icon=0, apiSource=null, typeCode=null, mode=0, advFinalScore=null,  routePage=0,title=null, subTitle=null, adSize=null,probability=0], AppInfo[pkg=com.coloros.calculator, appType=0,iconSource=system, recallType=algorithm, deepLink=0,utrackClickUrl=0, utrackExposeUrl=0,icon=0, apiSource=null, typeCode=null, mode=0, advFinalScore=null,  routePage=0,title=null, subTitle=null, adSize=null,probability=0], AppInfo[pkg=com.google.android.youtube, appType=0,iconSource=system, recallType=algorithm, deepLink=0,utrackClickUrl=0, utrackExposeUrl=0,icon=0, apiSource=null, typeCode=null, mode=0, advFinalScore=null,  routePage=0,title=null, subTitle=null, adSize=null,probability=0], AppInfo[pkg=com.google.android.dialer, appType=0,iconSource=system, recallType=algorithm, deepLink=0,utrackClickUrl=0, utrackExposeUrl=0,icon=0, apiSource=null, typeCode=null, mode=0, advFinalScore=null,  routePage=0,title=null, subTitle=null, adSize=null,probability=0], AppInfo[pkg=com.android.chrome, appType=0,iconSource=system, recallType=algorithm, deepLink=0,utrackClickUrl=0, utrackExposeUrl=0,icon=0, apiSource=null, typeCode=null, mode=0, advFinalScore=null,  routePage=0,title=null, subTitle=null, adSize=null,probability=0], AppInfo[pkg=com.Slack, appType=0,iconSource=system, recallType=algorithm, deepLink=0,utrackClickUrl=0, utrackExposeUrl=0,icon=0, apiSource=null, typeCode=null, mode=0, advFinalScore=null,  routePage=0,title=null, subTitle=null, adSize=null,probability=0], AppInfo[pkg=com.google.android.apps.youtube.music, appType=0,iconSource=system, recallType=algorithm, deepLink=0,utrackClickUrl=0, utrackExposeUrl=0,icon=0, apiSource=null, typeCode=null, mode=0, advFinalScore=null,  routePage=0,title=null, subTitle=null, adSize=null,probability=0], AppInfo[pkg=com.suno.android, appType=0,iconSource=system, recallType=algorithm, deepLink=0,utrackClickUrl=0, utrackExposeUrl=0,icon=0, apiSource=null, typeCode=null, mode=0, advFinalScore=null,  routePage=0,title=null, subTitle=null, adSize=null,probability=0], AppInfo[pkg=com.google.android.apps.messaging, appType=0,iconSource=system, recallType=algorithm, deepLink=0,utrackClickUrl=0, utrackExposeUrl=0,icon=0, apiSource=null, typeCode=null, mode=0, advFinalScore=null,  routePage=0,title=null, subTitle=null, adSize=null,probability=0], AppInfo[pkg=com.google.android.apps.maps, appType=0,iconSource=system, recallType=algorithm, deepLink=0,utrackClickUrl=0, utrackExposeUrl=0,icon=0, apiSource=null, typeCode=null, mode=0, advFinalScore=null,  routePage=0,title=null, subTitle=null, adSize=null,probability=0], AppInfo[pkg=com.jio.media.jiobeats, appType=0,iconSource=system, recallType=algorithm, deepLink=0,utrackClickUrl=0, utrackExposeUrl=0,icon=0, apiSource=null, typeCode=null, mode=0, advFinalScore=null,  routePage=0,title=null, subTitle=null, adSize=null,probability=0], AppInfo[pkg=com.grofers.customerapp, appType=0,iconSource=system, recallType=algorithm, deepLink=0,utrackClickUrl=0, utrackExposeUrl=0,icon=0, apiSource=null, typeCode=null, mode=0, advFinalScore=null,  routePage=0,title=null, subTitle=null, adS
+03-23 17:48:40.210  1996  2886 I OplusScreenSecurityMask: onStackRemoved task = Task{558bb91 #8043 type=standard I=com.pratham.learning/.MainActivity} record = null displayId = 0
+03-23 17:48:40.210  1996  2886 D OplusAlwaysAliveManager: removing: 8043, ComponentInfo{com.pratham.learning/com.pratham.learning.MainActivity}
+03-23 17:48:40.211  1996  2886 D OplusTransitionController:    ChangeInfo{80473aa container=Task{558bb91 #8043 type=standard I=com.pratham.learning/.MainActivity} flags=0x10}
+03-23 17:48:40.211  1996  2886 D OplusTransitionController:    ChangeInfo{875c34d container=ActivityRecord{240552689 u0 com.pratham.learning/.MainActivity t-1 f}} flags=0x0}
+03-23 17:48:40.211  1996  2886 D FlexibleTaskTransitionController:    ChangeInfo{80473aa container=Task{558bb91 #8043 type=standard I=com.pratham.learning/.MainActivity} flags=0x10}
+03-23 17:48:40.211  1996  2886 D FlexibleTaskTransitionController:    ChangeInfo{875c34d container=ActivityRecord{240552689 u0 com.pratham.learning/.MainActivity t-1 f}} flags=0x0}
+03-23 17:48:40.214  1996  2024 D OplusFlexibleWindowMinimizedManagerHelper: onTaskVanished taskInfo:8043 task:Task{558bb91 #8043 type=standard I=com.pratham.learning/.MainActivity}
+03-23 17:48:40.214  1996  2024 D FlexibleTaskController: no need releaseFlexibleCaptionView or destroyFlexibleDragLeash when non-caption-view-task vanished, task=Task{558bb91 #8043 type=standard I=com.pratham.learning/.MainActivity}
+03-23 17:48:40.214  1996  2024 D OplusFlexibleWindowMinimizedManagerHelper: onTaskVanished taskInfo:8043 task:Task{558bb91 #8043 type=standard I=com.pratham.learning/.MainActivity}
+03-23 17:48:40.214  1996  2024 D FlexibleTaskController: no need releaseFlexibleCaptionView or destroyFlexibleDragLeash when non-caption-view-task vanished, task=Task{558bb91 #8043 type=standard I=com.pratham.learning/.MainActivity}
+03-23 17:48:40.214  1996  2484 D FlexibleTaskPerformanceManager: onTaskVanished:Task{558bb91 #8043 type=standard I=com.pratham.learning/.MainActivity}
+03-23 17:48:40.214  1996  2484 D FlexibleTaskPerformanceManager: onTaskVanished:Task{558bb91 #8043 type=standard I=com.pratham.learning/.MainActivity}
+03-23 17:48:40.218  1996  2776 D ActivityTaskManager: after skip size:9,pre-Filtered:com.pratham.learning # com.pratham.learning # com.pratham.learning # com.Slack # com.whatsapp # com.android.settings # com.coloros.filemanager # com.openai.chatgpt # com.google.android.dialer # 
+03-23 17:48:40.224  1996  2886 D ActivityTaskManager: after skip size:9,pre-Filtered:com.pratham.learning # com.pratham.learning # com.pratham.learning # com.Slack # com.whatsapp # com.android.settings # com.coloros.filemanager # com.openai.chatgpt # com.google.android.dialer # 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###########################
+
+new Error
+
+03-23 18:01:23.710  5515  7163 E unknown:ReactNative: guardedLoadModule@1:751049
+03-23 18:01:23.710  5515  7163 E unknown:ReactNative: metroRequire@1:750488
+03-23 18:01:23.710  5515  7163 E unknown:ReactNative: anonymous@1:217603
+03-23 18:01:23.710  5515  7163 E unknown:ReactNative: loadModuleImplementation@1:751428
+03-23 18:01:23.710  5515  7163 E unknown:ReactNative: guardedLoadModule@1:751049
+03-23 18:01:23.710  5515  7163 E unknown:ReactNative: metroRequire@1:750488
+03-23 18:01:23.710  5515  7163 E unknown:ReactNative: anonymous@1:89936
+03-23 18:01:23.710  5515  7163 E unknown:ReactNative: loadModuleImplementation@1:751428
+03-23 18:01:23.710  5515  7163 E unknown:ReactNative: guardedLoadModule@1:751008
+03-23 18:01:23.710  5515  7163 E unknown:ReactNative: metroRequire@1:750488
+03-23 18:01:23.710  5515  7163 E unknown:ReactNative: global@1:89896
+03-23 18:01:23.710  5515  7163 E unknown:ReactNative: 
+03-23 18:01:23.710  5515  7163 E unknown:ReactNative: 	at com.facebook.react.modules.core.ExceptionsManagerModule.reportException(ExceptionsManagerModule.kt:52)
+03-23 18:01:23.710  5515  7163 E unknown:ReactNative: 	at com.facebook.react.runtime.ReactInstance$ReactJsExceptionHandlerImpl.reportJsException(ReactInstance.kt:291)
+03-23 18:01:23.710  5515  7163 E unknown:ReactNative: 	at com.facebook.jni.NativeRunnable.run(Native Method)
+03-23 18:01:23.710  5515  7163 E unknown:ReactNative: 	at android.os.Handler.handleCallback(Handler.java:1027)
+03-23 18:01:23.710  5515  7163 E unknown:ReactNative: 	at android.os.Handler.dispatchMessage(Handler.java:108)
+03-23 18:01:23.710  5515  7163 E unknown:ReactNative: 	at com.facebook.react.bridge.queue.MessageQueueThreadHandler.dispatchMessage(MessageQueueThreadHandler.kt:21)
+03-23 18:01:23.710  5515  7163 E unknown:ReactNative: 	at android.os.Looper.loopOnce(Looper.java:298)
+03-23 18:01:23.710  5515  7163 E unknown:ReactNative: 	at android.os.Looper.loop(Looper.java:408)
+03-23 18:01:23.710  5515  7163 E unknown:ReactNative: 	at com.facebook.react.bridge.queue.MessageQueueThreadImpl$Companion.startNewBackgroundThread$lambda$0(MessageQueueThreadImpl.kt:152)
+03-23 18:01:23.710  5515  7163 E unknown:ReactNative: 	at com.facebook.react.bridge.queue.MessageQueueThreadImpl$Companion.$r8$lambda$YYXYCFexeoKtAeDpeNYkxZZlpbA(Unknown Source:0)
+03-23 18:01:23.710  5515  7163 E unknown:ReactNative: 	at com.facebook.react.bridge.queue.MessageQueueThreadImpl$Companion$$ExternalSyntheticLambda0.run(D8$$SyntheticClass:0)
+03-23 18:01:23.710  5515  7163 E unknown:ReactNative: 	at java.lang.Thread.run(Thread.java:1564)
+03-23 18:01:23.711  5515  7163 I ReactNativeJS: Running "learnerapp"
+03-23 18:01:23.712  5515  7163 E ReactNativeJS: [runtime not ready]: Invariant Violation: "learnerapp" has not been registered. This can happen if:
+03-23 18:01:23.712  5515  7163 E ReactNativeJS: * Metro (the local dev server) is run from the wrong folder. Check if Metro is running, stop it and restart it in the current project.
+03-23 18:01:23.712  5515  7163 E ReactNativeJS: * A module failed to load due to an error and `AppRegistry.registerComponent` wasn't called.
+03-23 18:01:23.721  5515  5515 D OplusPredictiveBackController: should not HookOnBackInvokedCallbackEnabled for application com.pratham.learning.MainActivity@f6a38e3 sdk: 36
+03-23 18:01:23.721  5515  5515 D WindowOnBackDispatcher:  predictive settings is disabled for com.pratham.learning
+03-23 18:01:23.722  5515  5515 D WindowManager: Add to mViews: com.android.internal.policy.DecorView{db38842 V.ED..... R.....ID 0,0-0,0 alpha=1.0 viewInfo = }[MainActivity],pkg= com.pratham.learning
+03-23 18:01:23.726  1996  3164 D WindowManager: NFW_findFocusedWindowIfNeeded:Window{b0858b3 u0 com.pratham.learning/com.pratham.learning.MainActivity} mCurrentFocus:Window{2b4c032 u0 com.pratham.learning/com.pratham.learning.MainActivity}
+03-23 18:01:23.726  1996  3164 V WindowManager: Changing focus from Window{2b4c032 u0 com.pratham.learning/com.pratham.learning.MainActivity} to Window{b0858b3 u0 com.pratham.learning/com.pratham.learning.MainActivity},diplayid=0
+03-23 18:01:23.729  1996  3164 I WindowManager: addWindow: New client android.os.BinderProxy@389f622 : window=Window{b0858b3 u0 com.pratham.learning/com.pratham.learning.MainActivity}
+03-23 18:01:23.734  5515  7163 E ReactNativeJS: [runtime not ready]: Error: Non-js exception: AppRegistryBinding::stopSurface failed. Global was not installed.
+03-23 18:01:23.734  5515  5515 D OplusPredictiveBackController: should not HookOnBackInvokedCallbackEnabled for application com.pratham.learning.MainActivity@f6a38e3 sdk: 36
+03-23 18:01:23.734  5515  5515 D WindowOnBackDispatcher:  predictive settings is disabled for com.pratham.learning
+03-23 18:01:23.734  5515  5515 D OplusPredictiveBackController: should not HookOnBackInvokedCallbackEnabled for application com.pratham.learning.MainActivity@f6a38e3 sdk: 36
+03-23 18:01:23.734  5515  5515 D WindowOnBackDispatcher:  predictive settings is disabled for com.pratham.learning
+03-23 18:01:23.736  1996  3164 D CoreBackPreview: Window{b0858b3 u0 com.pratham.learning/com.pratham.learning.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@dfc2b2b, mPriority=0, mIsAnimationCallback=false, mOverrideBehavior=0}
+03-23 18:01:23.736  5515  5515 D ViewRootImplExtImpl: wrapConfigInfoIntoFlags rotation=0, smallestScreenWidthDp=0, residentWS=false, scenario=0, bounds=Rect(0, 0 - 1080, 2392), relayoutAsync=false, flags=0, newFlags=1254096896, title=com.pratham.learning/com.pratham.learning.MainActivity
+03-23 18:01:23.737  1996  3164 V WindowManager: Relayout Window{b0858b3 u0 com.pratham.learning/com.pratham.learning.MainActivity}: viewVisibility=0, oldvis=0, req=1080x2392 , apr = 0, vsysui=, x=0, y=0
+03-23 18:01:23.737  1996  3164 I WindowManager: Window{b0858b3 u0 com.pratham.learning/com.pratham.learning.MainActivity} state from NO_SURFACE to DRAW_PENDING; reason: resetDrawState
+03-23 18:01:23.741  1996  3164 D WindowManager: NFW_findFocusedWindowIfNeeded:Window{b0858b3 u0 com.pratham.learning/com.pratham.learning.MainActivity} mCurrentFocus:Window{b0858b3 u0 com.pratham.learning/com.pratham.learning.MainActivity}
+03-23 18:01:23.749  1996  2024 D SurfaceComposerClient: Transaction::apply InputWindowCommands.focusRequests timestamp=138360998230861, windowName=b0858b3 com.pratham.learning/com.pratham.learning.MainActivity
+03-23 18:01:23.758  5515  5515 I SurfaceControl:  setExtendedRangeBrightness sc=Surface(name=com.pratham.learning/com.pratham.learning.MainActivity)/@0x1493f9,currentBufferRatio=1.0,desiredRatio=1.0
+03-23 18:01:23.768  1996  3164 I WindowManager: Window{b0858b3 u0 com.pratham.learning/com.pratham.learning.MainActivity} state from DRAW_PENDING to COMMIT_DRAW_PENDING; reason: finishDrawingLocked
+03-23 18:01:23.770  1996  2024 I WindowManager: Window{b0858b3 u0 com.pratham.learning/com.pratham.learning.MainActivity} state from COMMIT_DRAW_PENDING to READY_TO_SHOW; reason: commitFinishDrawingLocked
+03-23 18:01:23.770  1996  2024 D ActivityTaskManager: Clearing startingData for activity=ActivityRecord{20424232 u0 com.pratham.learning/.MainActivity t8045} mStartingData=null mStartingSurface=null
+03-23 18:01:23.770  5515  6197 E unknown:ReactNative: Tried to remove non-existent frame callback
+03-23 18:01:23.771  1236  1817 D SurfaceFlinger: updateWinowInfo=1, setFocusedWindow timestamp=138360998230861, windowName=b0858b3 com.pratham.learning/com.pratham.learning.MainActivity
+03-23 18:01:23.772  1996  2188 I InputDispatcher: NFW_setFocusedWindow, b0858b3 com.pratham.learning/com.pratham.learning.MainActivity on display 0, same as the previous:0
+03-23 18:01:23.772  5515  6197 W unknown:ReactNative: Tried to enqueue runnable on already finished thread: 'v_native... dropping Runnable.
+03-23 18:01:23.773  1996  2024 I WindowManager: Window{b0858b3 u0 com.pratham.learning/com.pratham.learning.MainActivity} state from READY_TO_SHOW to HAS_DRAWN; reason: performShowLocked
+03-23 18:01:23.775  5515  6197 W unknown:ReactNative: Tried to enqueue runnable on already finished thread: 'v_native... dropping Runnable.
+03-23 18:01:23.775  5515  6197 W unknown:ReactNative: Tried to enqueue runnable on already finished thread: 'v_native... dropping Runnable.
+03-23 18:01:23.775  5515  6197 W unknown:ReactNative: Tried to enqueue runnable on already finished thread: 'v_native... dropping Runnable.
+03-23 18:01:23.775  5515  6197 W unknown:ReactNative: Tried to enqueue runnable on already finished thread: 'v_native... dropping Runnable.
+03-23 18:01:23.775  5515  6197 W unknown:ReactNative: Tried to enqueue runnable on already finished thread: 'v_native... dropping Runnable.
+03-23 18:01:23.775  5515  6197 W unknown:ReactNative: Tried to enqueue runnable on already finished thread: 'v_native... dropping Runnable.
+03-23 18:01:23.775  5515  6197 W unknown:ReactNative: Tried to enqueue runnable on already finished thread: 'v_native... dropping Runnable.
+03-23 18:01:23.775  5515  6197 W unknown:ReactNative: Tried to enqueue runnable on already finished thread: 'v_native... dropping Runnable.
+03-23 18:01:23.776  5515  6197 W unknown:ReactNative: Tried to enqueue runnable on already finished thread: 'v_native... dropping Runnable.
+03-23 18:01:23.776  5515  6197 W unknown:ReactNative: Tried to enqueue runnable on already finished thread: 'v_native... dropping Runnable.
+03-23 18:01:23.776  5515  6197 W System.err: java.lang.NoSuchFieldException: No field mIsFinished in class Lcom/facebook/react/bridge/queue/MessageQueueThreadImpl; (declaration of 'com.facebook.react.bridge.queue.MessageQueueThreadImpl' appears in /data/app/~~bzDsph6W4CP0uALG8iGw7A==/com.pratham.learning-AFGtczNCBfvlx09k_Cu-VA==/base.apk)
+03-23 18:01:23.782  1996  2025 D SurfaceAnimationRunner: onAnimationStart:Surface(name=Surface(name=b0858b3 com.pratham.learning/com.pratham.learning.MainActivity)/@0x8ae63a0 - animation-leash of window_animation)/@0x25b5b59
+03-23 18:01:23.823  1996  3164 I InputDispatcher: updateFocusedWindow, b0858b3 com.pratham.learning/com.pratham.learning.MainActivity on display 0, reason: Window became focusable. Previous reason: NOT_VISIBLE, result:   FocusedWindows:
+03-23 18:01:23.823  1996  3164 I InputDispatcher:     displayId=0, name='b0858b3 com.pratham.learning/com.pratham.learning.MainActivity'
+03-23 18:01:23.825  1996  2247 D InputMethodManagerService: isSecurity: attribute.packageName = com.pratham.learning mCurMethodId = com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME isSecurity = false ( enable = true needShow = false inBlackList = false isExist = true )
+03-23 18:01:23.826  1996  2247 I ImeTracker: com.pratham.learning:38e7bcb8: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false
+03-23 18:01:23.827  5515  5515 I ImeTracker: com.pratham.learning:38e7bcb8: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+03-23 18:01:23.831  5777  5777 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1385 onStartInput(EditorInfo{EditorInfo{packageName=com.pratham.learning, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=Bundle[{com.oplus.im.WINDOW_MODE=1, com.oplus.im.SCENES=0}], hintText=null, hintLocales=[]}}, false)
+03-23 18:01:23.832  1996  2970 W PackageConfigPersister: App-specific configuration not found for packageName: com.pratham.learning and userId: 0
+03-23 18:01:23.982  1996  2025 D SurfaceAnimationRunner: onAnimationEnd:Surface(name=Surface(name=b0858b3 com.pratham.learning/com.pratham.learning.MainActivity)/@0x8ae63a0 - animation-leash of window_animation)/@0x25b5b59
+03-23 18:01:24.087  2986  3650 D UlPriorityPolicyForeground: match: config has not com.pratham.learning
+03-23 18:01:24.783  5515  6208 D OplusScrollToTopManager: com.pratham.learning/com.pratham.learning.MainActivity,This com.android.internal.policy.DecorView{42017d V.E...... R....... 0,0-1080,2392 aid=1 alpha=1.0 viewInfo = }[MainActivity] change focus to false
+03-23 18:01:24.824  5515  6208 D OplusScrollToTopManager: com.pratham.learning/com.pratham.learning.MainActivity,This com.android.internal.policy.DecorView{db38842 V.ED..... R....... 0,0-1080,2392 aid=1073741824 alpha=1.0 viewInfo = }[MainActivity] change focus to true
+03-23 18:01:27.397  1163  1163 I MTK_APPList: [notifyAPPstate] multi_resumed_app_info[0] com.pratham.learning/com.pratham.learning.MainActivity, pid:5515, fps:-1, isMultiWindow:0
+03-23 18:01:29.004  1163  1163 I MTK_APPList: [notifyAPPstate] multi_resumed_app_info[0] com.pratham.learning/com.pratham.learning.MainActivity, pid:5515, fps:-1, isMultiWindow:0
+03-23 18:01:33.207  1163  1163 I MTK_APPList: [notifyAPPstate] multi_resumed_app_info[0] com.pratham.learning/com.pratham.learning.MainActivity, pid:5515, fps:-1, isMultiWindow:0
+03-23 18:01:34.004  1163  1163 I MTK_APPList: [notifyAPPstate] multi_resumed_app_info[0] com.pratham.learning/com.pratham.learning.MainActivity, pid:5515, fps:-1, isMultiWindow:0
+03-23 18:01:46.369  1163  1163 I MTK_APPList: [notifyAPPstate] multi_resumed_app_info[0] com.pratham.learning/com.pratham.learning.MainActivity, pid:5515, fps:-1, isMultiWindow:0
+03-23 18:01:49.086  1163  1163 I MTK_APPList: [notifyAPPstate] multi_resumed_app_info[0] com.pratham.learning/com.pratham.learning.MainActivity, pid:5515, fps:-1, isMultiWindow:0
+03-23 18:01:58.243  1163  1163 I MTK_APPList: [notifyAPPstate] multi_resumed_app_info[0] com.pratham.learning/com.pratham.learning.MainActivity, pid:5515, fps:-1, isMultiWindow:0
+03-23 18:02:19.245  1163  1163 I MTK_APPList: [notifyAPPstate] multi_resumed_app_info[0] com.pratham.learning/com.pratham.learning.MainActivity, pid:5515, fps:-1, isMultiWindow:0
+
+
+
+##################
+
+new error
+
+03-23 18:27:18.487 19005 19071 D nativeloader: Load /data/app/~~r_9l0MlTAD6mLonpZnLniw==/com.pratham.learning-_BhJRaMIY4MothwdZ8-qew==/base.apk!/lib/arm64-v8a/libworklets.so using class loader ns clns-9 (caller=/data/app/~~r_9l0MlTAD6mLonpZnLniw==/com.pratham.learning-_BhJRaMIY4MothwdZ8-qew==/base.apk!classes19.dex): ok
+03-23 18:27:18.527 19005 19071 D nativeloader: Load /data/app/~~r_9l0MlTAD6mLonpZnLniw==/com.pratham.learning-_BhJRaMIY4MothwdZ8-qew==/base.apk!/lib/arm64-v8a/libreanimated.so using class loader ns clns-9 (caller=/data/app/~~r_9l0MlTAD6mLonpZnLniw==/com.pratham.learning-_BhJRaMIY4MothwdZ8-qew==/base.apk!classes19.dex): ok
+03-23 18:27:18.601 19005 19071 I ReactNativeJS: Running "learnerapp"
+03-23 18:27:18.603 19005 19071 E ReactNativeJS: [TypeError: Cannot read property 'S' of undefined]
+03-23 18:27:18.604 19005 19071 E ReactNativeJS: [TypeError: Cannot read property 'default' of undefined]
+03-23 18:27:18.610 19005 19072 E unknown:ReactNative: Exception in native call from JS
+03-23 18:27:18.610 19005 19072 E unknown:ReactNative: com.facebook.react.common.JavascriptException: TypeError: Cannot read property 'S' of undefined, stack:
+03-23 18:27:18.610 19005 19072 E unknown:ReactNative: anonymous@1:114397
+03-23 18:27:18.610 19005 19072 E unknown:ReactNative: loadModuleImplementation@1:751428
+03-23 18:27:18.610 19005 19072 E unknown:ReactNative: guardedLoadModule@1:751049
+03-23 18:27:18.610 19005 19072 E unknown:ReactNative: metroRequire@1:750488
+03-23 18:27:18.610 19005 19072 E unknown:ReactNative: anonymous@1:110505
+03-23 18:27:18.610 19005 19072 E unknown:ReactNative: loadModuleImplementation@1:751428
+03-23 18:27:18.610 19005 19072 E unknown:ReactNative: guardedLoadModule@1:751008
+03-23 18:27:18.610 19005 19072 E unknown:ReactNative: metroRequire@1:750488
+03-23 18:27:18.610 19005 19072 E unknown:ReactNative: renderElement@1:798031
+03-23 18:27:18.610 19005 19072 E unknown:ReactNative: renderApplication@1:933475
+03-23 18:27:18.610 19005 19072 E unknown:ReactNative: anonymous@1:1992509
+03-23 18:27:18.610 19005 19072 E unknown:ReactNative: runApplication@1:932040
+03-23 18:27:18.610 19005 19072 E unknown:ReactNative: 
+03-23 18:27:18.610 19005 19072 E unknown:ReactNative: 	at com.facebook.react.modules.core.ExceptionsManagerModule.reportException(ExceptionsManagerModule.kt:52)
+03-23 18:27:18.610 19005 19072 E unknown:ReactNative: 	at com.facebook.jni.NativeRunnable.run(Native Method)
+03-23 18:27:18.610 19005 19072 E unknown:ReactNative: 	at android.os.Handler.handleCallback(Handler.java:1027)
+03-23 18:27:18.610 19005 19072 E unknown:ReactNative: 	at android.os.Handler.dispatchMessage(Handler.java:108)
+03-23 18:27:18.610 19005 19072 E unknown:ReactNative: 	at com.facebook.react.bridge.queue.MessageQueueThreadHandler.dispatchMessage(MessageQueueThreadHandler.kt:21)
+03-23 18:27:18.610 19005 19072 E unknown:ReactNative: 	at android.os.Looper.loopOnce(Looper.java:298)
+03-23 18:27:18.610 19005 19072 E unknown:ReactNative: 	at android.os.Looper.loop(Looper.java:408)
+03-23 18:27:18.610 19005 19072 E unknown:ReactNative: 	at com.facebook.react.bridge.queue.MessageQueueThreadImpl$Companion.startNewBackgroundThread$lambda$0(MessageQueueThreadImpl.kt:152)
+03-23 18:27:18.610 19005 19072 E unknown:ReactNative: 	at com.facebook.react.bridge.queue.MessageQueueThreadImpl$Companion.$r8$lambda$YYXYCFexeoKtAeDpeNYkxZZlpbA(Unknown Source:0)
+03-23 18:27:18.610 19005 19072 E unknown:ReactNative: 	at com.facebook.react.bridge.queue.MessageQueueThreadImpl$Companion$$ExternalSyntheticLambda0.run(D8$$SyntheticClass:0)
+03-23 18:27:18.610 19005 19072 E unknown:ReactNative: 	at java.lang.Thread.run(Thread.java:1564)
+03-23 18:27:18.629 19005 19005 D OplusPredictiveBackController: should not HookOnBackInvokedCallbackEnabled for application com.pratham.learning.MainActivity@7d5b1af sdk: 36
+03-23 18:27:18.630 19005 19005 D WindowOnBackDispatcher:  predictive settings is disabled for com.pratham.learning
+03-23 18:27:18.630 19005 19005 D WindowManager: Add to mViews: com.android.internal.policy.DecorView{789191 V.ED..... R.....ID 0,0-0,0 alpha=1.0 viewInfo = }[MainActivity],pkg= com.pratham.learning
+03-23 18:27:18.633  1996  3176 D WindowManager: NFW_findFocusedWindowIfNeeded:Window{8bf42de u0 com.pratham.learning/com.pratham.learning.MainActivity} mCurrentFocus:Window{76fd172 u0 com.pratham.learning/com.pratham.learning.MainActivity}
+03-23 18:27:18.633  1996  3176 V WindowManager: Changing focus from Window{76fd172 u0 com.pratham.learning/com.pratham.learning.MainActivity} to Window{8bf42de u0 com.pratham.learning/com.pratham.learning.MainActivity},diplayid=0
+03-23 18:27:18.637  1996  3176 I WindowManager: addWindow: New client android.os.BinderProxy@8bcd219 : window=Window{8bf42de u0 com.pratham.learning/com.pratham.learning.MainActivity}
+03-23 18:27:18.640 19005 19071 E ReactNativeJS: [Error: Non-js exception: AppRegistryBinding::stopSurface failed. Global was not installed.]
+03-23 18:27:18.643 19005 19005 D OplusPredictiveBackController: should not HookOnBackInvokedCallbackEnabled for application com.pratham.learning.MainActivity@7d5b1af sdk: 36
+03-23 18:27:18.643 19005 19005 D WindowOnBackDispatcher:  predictive settings is disabled for com.pratham.learning
+03-23 18:27:18.643 19005 19005 D OplusPredictiveBackController: should not HookOnBackInvokedCallbackEnabled for application com.pratham.learning.MainActivity@7d5b1af sdk: 36
+03-23 18:27:18.643 19005 19005 D WindowOnBackDispatcher:  predictive settings is disabled for com.pratham.learning
+03-23 18:27:18.644  1996  2518 D CoreBackPreview: Window{8bf42de u0 com.pratham.learning/com.pratham.learning.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@4c814b7, mPriority=0, mIsAnimationCallback=false, mOverrideBehavior=0}
+03-23 18:27:18.649 19005 19005 D ViewRootImplExtImpl: wrapConfigInfoIntoFlags rotation=0, smallestScreenWidthDp=0, residentWS=false, scenario=0, bounds=Rect(0, 0 - 1080, 2392), relayoutAsync=false, flags=0, newFlags=1254096896, title=com.pratham.learning/com.pratham.learning.MainActivity
+03-23 18:27:18.650  1996  3176 V WindowManager: Relayout Window{8bf42de u0 com.pratham.learning/com.pratham.learning.MainActivity}: viewVisibility=0, oldvis=0, req=1080x2392 , apr = 0, vsysui=, x=0, y=0
+03-23 18:27:18.650  1996  3176 I WindowManager: Window{8bf42de u0 com.pratham.learning/com.pratham.learning.MainActivity} state from NO_SURFACE to DRAW_PENDING; reason: resetDrawState
+03-23 18:27:18.653  1996  3176 D WindowManager: NFW_findFocusedWindowIfNeeded:Window{8bf42de u0 com.pratham.learning/com.pratham.learning.MainActivity} mCurrentFocus:Window{8bf42de u0 com.pratham.learning/com.pratham.learning.MainActivity}
+
+
+
+
+
+
+
+
+
+##########################
+
+Error
+
+03-24 10:05:28.524  2912  3564 D AppSenseClient: handleSenseEvent appInfoUnits: {pkgName:com.pratham.learning,activityName:com.pratham.learning.MainActivity,winMode:1,event:COMMON,type:0,subEvent:0,pid:29603,uid:10451},
+03-24 10:05:28.524  2912  3564 D AppSenseClient: notifyAppEvent: pkgName: com.pratham.learning,activityName:com.pratham.learning.MainActivity;state: 1;event: COMMON;type: 0;subEvent: 0;pid: 29603;uid: 10451
+03-24 10:05:28.524  2912  3564 D AppSenseClient: notifyAppChanges: [{pkgName:com.pratham.learning,activityName:com.pratham.learning.MainActivity,winMode:1,event:COMMON,type:0,subEvent:0,pid:29603,uid:10451}]
+03-24 10:05:28.526  3026  4567 D Subsys-ScoreAppManager: unit: {pkgName:com.pratham.learning,activityName:,winMode:1,event:COMMON,type:0,subEvent:0,pid:29603,uid:10451}
+03-24 10:05:28.776 29603 29665 I ReactNativeJS: Running "learnerapp"
+03-24 10:05:28.778 29603 29665 E ReactNativeJS: [TypeError: Cannot read property 'S' of undefined]
+03-24 10:05:28.780 29603 29665 E ReactNativeJS: [TypeError: Cannot read property 'default' of undefined]
+03-24 10:05:28.784 29603 29666 E unknown:ReactNative: Exception in native call from JS
+03-24 10:05:28.784 29603 29666 E unknown:ReactNative: com.facebook.react.common.JavascriptException: TypeError: Cannot read property 'S' of undefined, stack:
+03-24 10:05:28.784 29603 29666 E unknown:ReactNative: anonymous@1:114429
+03-24 10:05:28.784 29603 29666 E unknown:ReactNative: loadModuleImplementation@1:751610
+03-24 10:05:28.784 29603 29666 E unknown:ReactNative: guardedLoadModule@1:751231
+03-24 10:05:28.784 29603 29666 E unknown:ReactNative: metroRequire@1:750670
+03-24 10:05:28.784 29603 29666 E unknown:ReactNative: anonymous@1:110537
+03-24 10:05:28.784 29603 29666 E unknown:ReactNative: loadModuleImplementation@1:751610
+03-24 10:05:28.784 29603 29666 E unknown:ReactNative: guardedLoadModule@1:751190
+03-24 10:05:28.784 29603 29666 E unknown:ReactNative: metroRequire@1:750670
+03-24 10:05:28.784 29603 29666 E unknown:ReactNative: renderElement@1:798215
+03-24 10:05:28.784 29603 29666 E unknown:ReactNative: renderApplication@1:933687
+03-24 10:05:28.784 29603 29666 E unknown:ReactNative: anonymous@1:1993576
+03-24 10:05:28.784 29603 29666 E unknown:ReactNative: runApplication@1:932252
+03-24 10:05:28.784 29603 29666 E unknown:ReactNative: 
+03-24 10:05:28.784 29603 29666 E unknown:ReactNative: 	at com.facebook.react.modules.core.ExceptionsManagerModule.reportException(ExceptionsManagerModule.kt:52)
+03-24 10:05:28.784 29603 29666 E unknown:ReactNative: 	at com.facebook.jni.NativeRunnable.run(Native Method)
+03-24 10:05:28.784 29603 29666 E unknown:ReactNative: 	at android.os.Handler.handleCallback(Handler.java:1027)
+03-24 10:05:28.784 29603 29666 E unknown:ReactNative: 	at android.os.Handler.dispatchMessage(Handler.java:108)
+03-24 10:05:28.784 29603 29666 E unknown:ReactNative: 	at com.facebook.react.bridge.queue.MessageQueueThreadHandler.dispatchMessage(MessageQueueThreadHandler.kt:21)
+03-24 10:05:28.784 29603 29666 E unknown:ReactNative: 	at android.os.Looper.loopOnce(Looper.java:298)
+03-24 10:05:28.784 29603 29666 E unknown:ReactNative: 	at android.os.Looper.loop(Looper.java:408)
+03-24 10:05:28.784 29603 29666 E unknown:ReactNative: 	at com.facebook.react.bridge.queue.MessageQueueThreadImpl$Companion.startNewBackgroundThread$lambda$0(MessageQueueThreadImpl.kt:152)
+03-24 10:05:28.784 29603 29666 E unknown:ReactNative: 	at com.facebook.react.bridge.queue.MessageQueueThreadImpl$Companion.$r8$lambda$YYXYCFexeoKtAeDpeNYkxZZlpbA(Unknown Source:0)
+03-24 10:05:28.784 29603 29666 E unknown:ReactNative: 	at com.facebook.react.bridge.queue.MessageQueueThreadImpl$Companion$$ExternalSyntheticLambda0.run(D8$$SyntheticClass:0)
+03-24 10:05:28.784 29603 29666 E unknown:ReactNative: 	at java.lang.Thread.run(Thread.java:1564)
+03-24 10:05:28.806 29603 29603 D OplusPredictiveBackController: should not HookOnBackInvokedCallbackEnabled for application com.pratham.learning.MainActivity@7d5b1af sdk: 36
+03-24 10:05:28.806 29603 29603 D WindowOnBackDispatcher:  predictive settings is disabled for com.pratham.learning
+03-24 10:05:28.807 29603 29603 D WindowManager: Add to mViews: com.android.internal.policy.DecorView{f89f8d4 V.ED..... R.....ID 0,0-0,0 alpha=1.0 viewInfo = }[MainActivity],pkg= com.pratham.learning
+03-24 10:05:28.811  1996  2930 D WindowManager: NFW_findFocusedWindowIfNeeded:Window{b7119c2 u0 com.pratham.learning/com.pratham.learning.MainActivity} mCurrentFocus:Window{9c23952 u0 com.pratham.learning/com.pratham.learning.MainActivity}
+03-24 10:05:28.812  1996  2930 V WindowManager: Changing focus from Window{9c23952 u0 com.pratham.learning/com.pratham.learning.MainActivity} to Window{b7119c2 u0 com.pratham.learning/com.pratham.learning.MainActivity},diplayid=0

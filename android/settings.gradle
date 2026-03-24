@@ -5,7 +5,4 @@ extensions.configure(com.facebook.react.ReactSettingsExtension) { ex ->
 }
 rootProject.name = 'learnerapp'
 include ':app'
-// react-native-config: CLI reports android: null, so it is not autolinked — must include manually
-include ':react-native-config'
-project(':react-native-config').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-config/android')
 includeBuild('../node_modules/@react-native/gradle-plugin')
