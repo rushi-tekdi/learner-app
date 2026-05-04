@@ -78,3 +78,9 @@ yarn-error.log
 .env.prod
 .env.uat
 # .cursor/*
+# Zoom SDK binaries (download manually from marketplace.zoom.us)
+android/app/libs/*.aar
+android/app/libs/*.jar
+android/mobilertc/*.aar
+android/mobilertc/*.jar
+android/mobilertc/build/

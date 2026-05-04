@@ -11,6 +11,9 @@ import {
   Modal,
   SafeAreaView,
   StatusBar,
+  ActivityIndicator,
+  Alert,
+  Platform,
 } from 'react-native';
 import { Layout } from '@ui-kitten/components';
 import globalStyles from '../../../../utils/Helper/Style';
@@ -23,13 +26,31 @@ import { formatDateTimeRange, getStoredUsername } from '../../../../utils/JsHelp
 import { useNavigation } from '@react-navigation/native';
 import menu_book from '../../../../assets/images/png/menu_book.png';
 import ZoomWebView from '../../../../components/ZoomWebView/ZoomWebView';
+import Config from 'react-native-config';
+import { joinZoomMeetingNoBackend } from '../../../../utils/ZoomSDKBridge';
 
 import GlobalText from '@components/GlobalText/GlobalText';
+
+// Extract meeting number and password from a Zoom URL
+// e.g. https://zoom.us/j/12345678901?pwd=AbCdEf
+const parseMeetingDetails = (url) => {
+  try {
+    const urlObj = new URL(url);
+    const pathParts = urlObj.pathname.split('/');
+    const jIndex = pathParts.indexOf('j');
+    const meetingNumber = jIndex !== -1 ? pathParts[jIndex + 1]?.replace(/\D/g, '') : null;
+    const password = urlObj.searchParams.get('pwd') || '';
+    return { meetingNumber, password };
+  } catch {
+    return { meetingNumber: null, password: '' };
+  }
+};
 
 const SubjectCard = ({ item }) => {
   const [isAccordionOpen, setAccordionOpen] = useState(false);
   const [showToast, setShowToast] = useState(false);
   const [showZoomModal, setShowZoomModal] = useState(false);
+  const [isJoiningNative, setIsJoiningNative] = useState(false);
   const [userName, setUserName] = useState('');
   const { t } = useTranslation();
   const navigation = useNavigation();
@@ -49,14 +70,45 @@ const SubjectCard = ({ item }) => {
   }, []);
 
   const handleCopyLink = (zoomLink) => {
-    Clipboard.setString(zoomLink); // Copy the Zoom link to the clipboard
-    setShowToast(true); // Show toast message
+    Clipboard.setString(zoomLink);
+    setShowToast(true);
   };
 
-  const handleOpenZoom = () => {
-    if (item?.onlineDetails?.url) {
-      setShowZoomModal(true);
+  const handleOpenZoom = async () => {
+    if (!item?.onlineDetails?.url) return;
+
+    // Only attempt native SDK on Android
+    if (Platform.OS === 'android') {
+      const { meetingNumber, password } = parseMeetingDetails(item.onlineDetails.url);
+
+      if (meetingNumber && Config.ZOOM_SDK_KEY && Config.ZOOM_SDK_SECRET) {
+        setIsJoiningNative(true);
+        try {
+          await joinZoomMeetingNoBackend({
+            meetingNumber,
+            password,
+            displayName: userName || 'Learner',
+            sdkKey: Config.ZOOM_SDK_KEY,
+            sdkSecret: Config.ZOOM_SDK_SECRET,
+            role: 0,
+          });
+          // Native SDK launched the Zoom meeting UI — nothing more to do here
+          return;
+        } catch (err) {
+          console.warn('Native Zoom SDK failed, falling back to WebView:', err);
+          Alert.alert(
+            'Opening in browser mode',
+            'Could not launch native meeting. Opening via WebView instead.',
+            [{ text: 'OK' }],
+          );
+        } finally {
+          setIsJoiningNative(false);
+        }
+      }
     }
+
+    // Fallback: open the existing WebView modal
+    setShowZoomModal(true);
   };
 
   return (
@@ -89,29 +141,23 @@ const SubjectCard = ({ item }) => {
         >
           {item?.metadata?.teacherName}
         </GlobalText>
-        {/* Zoom Link with Copy Icon */}
-        <View style={styles.linkRow}>
-          {item?.onlineDetails && (
-            <>
-              <TouchableOpacity
-                onPress={handleOpenZoom}
-              >
-                <GlobalText style={styles.zoomLink}>
-                  {item?.onlineDetails?.url}
-                </GlobalText>
-              </TouchableOpacity>
-              {/* <TouchableOpacity
-                onPress={() => handleCopyLink(item?.onlineDetails?.url)}
-              >
-                <Icon
-                  name={showToast ? 'clipboard-check' : 'copy'}
-                  color={showToast ? '#1A8825' : '#0D599E'}
-                  size={20}
-                />
-              </TouchableOpacity> */}
-            </>
-          )}
-        </View>
+        {/* Zoom Join Button */}
+        {item?.onlineDetails && (
+          <TouchableOpacity
+            style={[styles.joinButton, isJoiningNative && styles.joinButtonDisabled]}
+            onPress={handleOpenZoom}
+            disabled={isJoiningNative}
+          >
+            {isJoiningNative ? (
+              <ActivityIndicator size="small" color="#fff" />
+            ) : (
+              <>
+                <Ionicons name="videocam" size={16} color="#fff" style={{ marginRight: 6 }} />
+                <GlobalText style={styles.joinButtonText}>Join Meeting</GlobalText>
+              </>
+            )}
+          </TouchableOpacity>
+        )}
       </View>
       {/* Accordion */}
       <View
@@ -249,16 +295,24 @@ const styles = StyleSheet.create({
     fontSize: 18,
     marginBottom: 10,
   },
-  linkRow: {
+  joinButton: {
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-between',
+    justifyContent: 'center',
+    backgroundColor: '#0D599E',
+    borderRadius: 8,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
+    marginTop: 10,
+    alignSelf: 'flex-start',
   },
-
-  zoomLink: {
-    width: 250,
-    color: '#0D599E',
-    textDecorationLine: 'underline',
+  joinButtonDisabled: {
+    backgroundColor: '#7aabce',
+  },
+  joinButtonText: {
+    color: '#fff',
+    fontSize: 14,
+    fontWeight: '600',
   },
   icon: {
     width: 24,

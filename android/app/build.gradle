@@ -95,8 +95,26 @@ android {
         applicationId "com.pratham.learning"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 115
-        versionName "0.0.115"
+        versionCode 119
+        versionName "0.0.119"
+        multiDexEnabled true
+        ndk {
+            abiFilters "armeabi-v7a", "arm64-v8a", "x86", "x86_64"
+        }
+    }
+
+    packagingOptions {
+        pickFirst 'lib/armeabi-v7a/libc++_shared.so'
+        pickFirst 'lib/arm64-v8a/libc++_shared.so'
+        pickFirst 'lib/x86/libc++_shared.so'
+        pickFirst 'lib/x86_64/libc++_shared.so'
+        pickFirst 'lib/armeabi-v7a/libjingle_peerconnection_so.so'
+        pickFirst 'lib/arm64-v8a/libjingle_peerconnection_so.so'
+    }
+
+    kotlinOptions {
+        // Allow Kotlin 2.2-compiled Zoom SDK to coexist with this project's Kotlin 1.9 compiler
+        freeCompilerArgs += ['-Xskip-metadata-version-check']
     }
     signingConfigs {
         debug {
@@ -167,12 +185,21 @@ dependencies {
     implementation("com.facebook.fresco:animated-gif:2.0.0")
     //gif image show end
 
-     //bug build error fix for target sdk 35 version error
     configurations.all {
         resolutionStrategy {
+            //bug build error fix for target sdk 35 version error
             force 'androidx.browser:browser:1.7.0'
+            // Zoom SDK v7 pulls in activity:1.11.0 which needs compileSdk 36 + AGP 8.9.1.
+            // Force back to 1.9.x which is compatible with compileSdk 35 / AGP 8.6.0.
+            force 'androidx.activity:activity:1.9.3'
+            force 'androidx.activity:activity-ktx:1.9.3'
+            force 'androidx.activity:activity-compose:1.9.3'
+            force 'androidx.lifecycle:lifecycle-viewmodel-compose:2.8.7'
         }
     }
+
+    // Zoom Meeting SDK v7 — includes the AAR and all its transitive dependencies
+    implementation project(':mobilertc')
 
 }
 

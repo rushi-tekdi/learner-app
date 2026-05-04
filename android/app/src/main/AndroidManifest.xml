@@ -1,4 +1,9 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Zoom SDK v7 requires minSdk 28; this override keeps the app installable on API 26+
+         Zoom features simply won't work on API 26/27 devices. -->
+    <uses-sdk tools:overrideLibrary="us.zoom.videomeetings"/>
 <!--error with below line for android greater than 8 
 package="com.pratham.learning"
 -->
@@ -42,6 +47,13 @@ package="com.pratham.learning"
     <!-- for google analysis -->
     <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
 
+    <!-- Zoom SDK: Bluetooth audio routing -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <!-- Zoom SDK: screen share foreground service -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION" />
+
     <!-- for version upgrade API 35 app crash issue on android 9, 10, 11, 12 -->
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     
@@ -54,7 +66,9 @@ package="com.pratham.learning"
       android:allowBackup="false"
       android:theme="@style/AppTheme"
       android:requestLegacyExternalStorage="true"
-      android:launchMode="singleTask">
+      android:launchMode="singleTask"
+      android:usesCleartextTraffic="true"
+      tools:replace="android:usesCleartextTraffic">
       
       <!-- File Provider for downloads -->
       <provider
@@ -64,9 +78,18 @@ package="com.pratham.learning"
         android:grantUriPermissions="true">
         <meta-data
           android:name="android.support.FILE_PROVIDER_PATHS"
-          android:resource="@xml/provider_paths" />
+          android:resource="@xml/provider_paths"
+          tools:replace="android:resource" />
       </provider>
       
+      <!-- Zoom Meeting SDK activity -->
+      <activity
+        android:name="us.zoom.videomeetings.activities.main.MeetingActivity"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize"
+        android:hardwareAccelerated="true"
+        android:windowSoftInputMode="stateHidden|adjustPan"
+        android:exported="false" />
+
       <activity
         android:name=".MainActivity"
         android:label="@string/app_name"

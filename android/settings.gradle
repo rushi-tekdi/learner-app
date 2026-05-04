@@ -1,4 +1,8 @@
 rootProject.name = 'learnerapp'
+
+// Zoom Meeting SDK v7 module
+include ':mobilertc'
+project(':mobilertc').projectDir = new File(rootProject.projectDir, 'mobilertc')
 apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
 include ':app'
 includeBuild('../node_modules/@react-native/gradle-plugin')
