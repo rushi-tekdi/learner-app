@@ -32,6 +32,8 @@ import survey_filled from '@src/assets/images/png/survey_filled.png';
 import survey_unfilled from '@src/assets/images/png/survey_unfilled.png';
 import explore_FILL from '@src/assets/images/png/explore_FILL.png';
 import explore_UNFILLED from '@src/assets/images/png/explore_UNFILLED.png';
+import CampToClubSurveyWebViewScreen from '../../screens/CampToClubSurveyWebViewScreen/CampToClubSurveyWebViewScreen';
+import { TENANT_DATA } from '../../utils/Constants/app-constants';
 
 const Tab = createBottomTabNavigator();
 const WalkthroughableView = walkthroughable(View); // Wrap Image component
@@ -187,6 +189,22 @@ const WalkthroughableView = walkthroughable(View); // Wrap Image component
       </Tab.Screen>
       </>
        )}
+
+      {userType === TENANT_DATA.CAMP_TO_CLUB && (
+        <Tab.Screen
+          name="campToClubSurvey"
+          component={CampToClubSurveyWebViewScreen}
+          options={{
+            tabBarLabel: t('surveys'),
+            tabBarIcon: ({ focused }) => (
+              <Image
+                source={focused ? survey_filled : survey_unfilled}
+                style={{ width: 30, height: 30 }}
+              />
+            ),
+          }}
+        />
+      )}
 
       {contentShow && !selfChildrenTabShow && (
         <Tab.Screen
