@@ -552,6 +552,19 @@ const PlpWebViewScreen = () => {
               return true;
             }}
             onMessage={handleWebViewMessage}
+            onOpenWindow={(syntheticEvent) => {
+              // Links with target="_blank" (e.g. the Pragyanpath/ERP SSO link)
+              // would otherwise be handed off to the external system browser,
+              // which loses the WebView's localStorage/session (isAndroidApp
+              // flag, tenant/channel state), breaking the SSO callback flow.
+              // Navigating the same WebView keeps everything in one session.
+              const { targetUrl } = syntheticEvent.nativeEvent;
+              if (targetUrl && webViewRef.current) {
+                webViewRef.current.injectJavaScript(
+                  `window.location.href = ${JSON.stringify(targetUrl)}; true;`
+                );
+              }
+            }}
             style={styles.webview}
             startInLoadingState={true}
             domStorageEnabled={true}
