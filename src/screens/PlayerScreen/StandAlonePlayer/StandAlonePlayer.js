@@ -32,12 +32,12 @@ import {
   resumeTrackingStatus,
 } from '../../../utils/API/ApiCalls';
 import {
-  qumlPlayerConfig,
+  qumlPlayerConfig as defaultQumlPlayerConfig,
   contentPlayerConfig,
   pdfPlayerConfig,
   videoPlayerConfig,
   epubPlayerConfig,
-  questionsData,
+  questionsData as defaultQuestionsData,
 } from './data';
 import { getData, removeData, storeData } from '../../../utils/Helper/JSHelper';
 import RNFS from 'react-native-fs';
@@ -239,6 +239,15 @@ const StandAlonePlayer = ({ route }) => {
     course_id ? course_id : content_do_id
   );
   const [unitId, setUnitId] = useState(unit_id ? unit_id : content_do_id);
+
+  //per-screen copies so metadata/questions of a previously opened
+  //assessment never leak into this one (data.js exports shared objects)
+  const qumlPlayerConfig = useRef(
+    JSON.parse(JSON.stringify(defaultQumlPlayerConfig))
+  ).current;
+  const questionsData = useRef(
+    JSON.parse(JSON.stringify(defaultQuestionsData))
+  ).current;
 
   const contentResumeData = useRef(null);
 
@@ -754,6 +763,23 @@ const StandAlonePlayer = ({ route }) => {
           let jsonObj = JSON.parse(data);
           let scoreDetails = jsonObj.scoreDetails;
           let identifierWithoutImg = jsonObj.identifierWithoutImg;
+          //guard: player must report the content opened on this screen
+          const expectedContentId = String(content_do_id).replace('.img', '');
+          if (identifierWithoutImg !== expectedContentId) {
+            console.warn(
+              'assessment contentId mismatch',
+              identifierWithoutImg,
+              expectedContentId
+            );
+            set_loading_text('');
+            setLoading(false);
+            Alert.alert(
+              'Error',
+              'Unable to submit assessment. Please close and open the assessment again.',
+              [{ text: 'OK' }]
+            );
+            return;
+          }
           let maxScore = jsonObj.maxScore;
           let seconds = assessmentLoadStartTimeRef.current
             ? Math.round((Date.now() - assessmentLoadStartTimeRef.current) / 1000)
@@ -2219,6 +2245,15 @@ fetch(
             */
             allowFileAccessFromFileURLs={true}
           />
+        )
+        : content_mime_type == 'application/vnd.sunbird.questionset' &&
+          is_valid_file !== true ? (
+          //wait for fetchDataQuml to fill qumlPlayerConfig for this content,
+          //otherwise the webview injects the previous assessment's metadata
+          //(module-level singleton) and the wrong contentId gets submitted
+          <View style={styles.middle_screen}>
+            <ActivityIndicator size="large" color="#0000ff" />
+          </View>
         )
         : (
           <WebView
